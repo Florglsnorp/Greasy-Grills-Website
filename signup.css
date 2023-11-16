@@ -53,6 +53,10 @@ body {
     width: 220px;
 }
 
+::-webkit-input-placeholder {
+    padding: 10px;
+}
+
 .btn {
     text-align: center;
     padding-bottom: 50px;
@@ -73,5 +77,6 @@ body {
     background-color: rgb(188, 75, 75);
 
 }
+
 
 
