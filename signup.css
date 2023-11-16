@@ -5,6 +5,10 @@
     font-family: 'Bangers', cursive;
 }
 
+::-webkit-input-placeholder {
+    padding: 10px;
+}
+
 body {
     background-color: rgb(153, 36, 36);
 }

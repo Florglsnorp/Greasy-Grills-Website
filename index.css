@@ -5,6 +5,10 @@
     font-family: 'Raleway', sans-serif;
 }
 
+::-webkit-input-placeholder {
+    padding: 10px;
+}
+
 .header
 {
     width: 100%;
