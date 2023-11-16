@@ -1,3 +1,4 @@
+
 * {
     margin: 0;
     padding: 0;
@@ -52,6 +53,11 @@ body {
     height: 25px;
     width: 220px;
     padding-left: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.signup-inputs-item:invalid {
+    box-shadow: 0 0 0.6rem red;
 }
 
 .btn {
@@ -72,7 +78,4 @@ body {
 .btn-item:hover {
     cursor: pointer;
     background-color: rgb(188, 75, 75);
-
 }
-
-
