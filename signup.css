@@ -52,6 +52,7 @@ body {
     border-radius: 20px;
     height: 25px;
     width: 220px;
+    padding-left: 10px;
 }
 
 ::-webkit-input-placeholder {
