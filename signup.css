@@ -5,10 +5,6 @@
     font-family: 'Bangers', cursive;
 }
 
-::-webkit-input-placeholder {
-    padding: 10px;
-}
-
 body {
     background-color: rgb(153, 36, 36);
 }
@@ -55,6 +51,7 @@ body {
     border-radius: 20px;
     height: 25px;
     width: 220px;
+    padding-left: 10px;
 }
 
 .btn {
