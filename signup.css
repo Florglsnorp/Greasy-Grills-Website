@@ -62,7 +62,7 @@ body {
 
 .btn {
     text-align: center;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
 }
 
 .btn-item {
@@ -78,4 +78,11 @@ body {
 .btn-item:hover {
     cursor: pointer;
     background-color: rgb(188, 75, 75);
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding-bottom: 30px;
 }
