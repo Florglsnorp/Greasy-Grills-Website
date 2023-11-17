@@ -67,3 +67,18 @@ img {
     max-width: 400px;
     word-break: break-word;
 }
+
+.input-item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+}
+
+.input-item input {
+    height: 20px;
+}
+
+.input-box {
+    text-align: center;
+}
