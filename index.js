@@ -16,9 +16,6 @@ function signUp() {
     else {
         alert('Not a valid email');
     }
-
-
-
 } 
 
 
