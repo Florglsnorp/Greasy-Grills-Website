@@ -51,12 +51,13 @@ h2 {
   
 h3 {
     font-size: 40px;
-    background-color: rgb(245, 188, 188);
+    background: radial-gradient(rgb(254, 171, 171), bisque);
     margin-bottom: 10px;
     text-align: center;
 }
   
 h4 {
+    background: radial-gradient(rgb(248, 216, 136), bisque);
     font-size: 30px;
     margin-bottom: 5px;
     text-align: center;
