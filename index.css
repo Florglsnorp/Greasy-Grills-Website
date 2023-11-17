@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Raleway', sans-serif;
+    scroll-behavior: smooth;
 }
 
 .header
@@ -38,15 +39,16 @@
     font-size: 80px;
     color: white;
     font-family: 'Bangers';
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px black
 }
-
-
 
 .about
 {
     text-align: center;
     background-color: #D2B48C;
     border-top: 2px solid black;
+    border-bottom: 2px solid black;
     width: 100%;
     height: 720px;
 }
@@ -56,10 +58,104 @@
     margin-top: 60px;
     font-size: 60px;
     font-family: 'Bangers';
+    letter-spacing: 2px;
+    color: rgb(153, 36, 36);
+    text-shadow: 2px 2px 4px black
+}
+
+.about .info
+{
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    margin-top: 100px;
+}
+
+.about .info .rambling
+{
+    width: 30%;
+    font-size: 30px;
+}
+
+.about .info .rambling a
+{
     color: rgb(153, 36, 36);
 }
 
+.about .info .rambling a:hover
+{
+    text-decoration: none;
+}
 
+.about .info .image img
+{
+    border-radius: 200px;
+}
+
+.where
+{
+    background-image: url('https://wallpapercave.com/wp/wp10007387.jpg');
+    width: 100%;
+    height: 720px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.where h1
+{
+    font-family: 'Bangers';
+    text-align: center;
+    padding-top: 50px;
+    color: rgb(153, 36, 36);
+    font-size: 80px;
+    letter-spacing: 4px;
+    -webkit-text-stroke-width: 3px;
+    -webkit-text-stroke-color: black;
+}
+
+.where .locations
+{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 30px;
+}
+
+.where .locations .location
+{
+    width: 25%;
+    height: 500px;
+    background-color: #D2B48C;
+    border: 4px solid black;
+}
+
+.where .locations .location img
+{
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 5%;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.where .locations .location h2
+{
+    text-align: center;
+    margin-top: 20px;
+    font-family: 'Bangers';
+    letter-spacing: 2px;
+    font-size: 30px;
+}
+
+.where .locations .location p
+{
+    text-align: center;
+    margin-top: 20px;
+    width: 90%;
+    margin-left: 5%;
+    font-size: 20px;
+}
 
 .log
 {
@@ -74,8 +170,10 @@
 {
     padding-top: 30px;
     font-family: 'Bangers';
+    letter-spacing: 2px;
     font-size: 40px;
     color: rgb(153, 36, 36);
+    text-shadow: 2px 2px 4px black
 }
 
 .log input
@@ -126,4 +224,3 @@
 {
     margin-top: 20px;
 }
-
