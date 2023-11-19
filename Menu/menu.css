@@ -67,4 +67,17 @@ img {
     display: block;
     max-width: 400px;
     word-break: break-word;
+    margin: 0 auto;
+}
+
+.Entrees {
+    text-align: center;
+}
+
+.Sides {
+    text-align: center;
+}
+
+.Drinks {
+    text-align: center;
 }

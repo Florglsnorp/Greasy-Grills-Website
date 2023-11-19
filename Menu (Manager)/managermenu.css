@@ -67,6 +67,7 @@ img {
     display: block;
     max-width: 400px;
     word-break: break-word;
+    margin: 0 auto;
 }
 
 .input-item {
@@ -82,4 +83,27 @@ img {
 
 .input-box {
     text-align: center;
+}
+
+
+
+.Entrees {
+    text-align: center;
+}
+
+.Sides {
+    text-align: center;
+}
+
+.Drinks {
+    text-align: center;
+}
+
+button {
+    display: block;
+    margin: 0 auto;
+}
+
+.remove-btn {
+    margin-bottom: 20px;
 }
