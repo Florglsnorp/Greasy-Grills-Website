@@ -180,6 +180,17 @@ let entreeDescriptions = JSON.parse(localStorage.getItem('entreeDescriptions')) 
 let entreePrices = JSON.parse(localStorage.getItem('entreePrices')) || [];
 let entreeImages = JSON.parse(localStorage.getItem('entreeImages')) || [];
 
+entreeNames.push('Burger');
+entreeDescriptions.push('Greasy burger yum');
+entreePrices.push('$5.00');
+entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.lkl9IzIYsoW2celgozPDcwHaHa&pid=Api&rs=1&c=1&qlt=95&w=107&h=107');
+
+
+entreeNames.push('Sausage Sandwich');
+entreeDescriptions.push('Greasy sausage yum');
+entreePrices.push('$4.00');
+entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOaA8gHaEF&pid=Api&rs=1&c=1&qlt=95&w=215&h=118');
+
 
 
 function retrieveItemsEntrees() {
@@ -401,6 +412,11 @@ let sideNames = JSON.parse(localStorage.getItem('sideNames')) || [];
 let sideDescriptions = JSON.parse(localStorage.getItem('sideDescriptions')) || [];
 let sidePrices = JSON.parse(localStorage.getItem('sidePrices')) || [];
 let sideImages = JSON.parse(localStorage.getItem('sideImages')) || [];
+
+sideNames.push('French Fries');
+sideDescriptions.push('Greasy fries yum');
+sidePrices.push('$2.00');
+sideImages.push('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111');
 
 function retrieveItemsSides() {
     let sideBox = document.getElementsByClassName('Sides')[0];
@@ -626,6 +642,32 @@ let drinkDescriptions = JSON.parse(localStorage.getItem('drinkDescriptions')) ||
 let drinkPrices = JSON.parse(localStorage.getItem('drinkPrices')) || [];
 let drinkImages = JSON.parse(localStorage.getItem('drinkImages')) || [];
 
+
+
+if (drinkNames.indexOf('water') === -1) {
+    drinkNames.push('water');
+    localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
+}
+
+if (drinkDescriptions.indexOf('greasy water') === -1) {
+    drinkDescriptions.push('greasy water');
+    localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
+
+}
+
+if (drinkPrices.indexOf('$4.00')) {
+    drinkPrices.push('$4.00');
+    localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
+}
+
+if (drinkImages.indexOf('url')) {
+    drinkImages.push('url');
+    localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
+
+}
+
+
+
 function retrieveItemsDrinks() {
     let drinksBox = document.getElementsByClassName('Drinks')[0];
 
@@ -682,6 +724,8 @@ function retrieveItemsDrinksManager() {
         n++;
     }
 
+    
+
     for (let i = 0; i < n; i++) {
         let name = document.createElement('h4');
         name.innerHTML = drinkNames.shift();
@@ -704,6 +748,7 @@ function retrieveItemsDrinksManager() {
     
         let managePrice = document.createElement('button');
         managePrice.innerHTML = 'Manage Price';
+        managePrice.setAttribute('onclick', 'managePrice()')
         drinkBox.appendChild(managePrice);
     
         let remove = document.createElement('button');
@@ -711,7 +756,12 @@ function retrieveItemsDrinksManager() {
         remove.innerHTML = 'Remove';
         drinkBox.appendChild(remove);
     }
+}
 
-    
+
+
+function managePrice() {
+    let userInput = prompt('Change price: ');
+    drinkPrices.splice()
 }
     
