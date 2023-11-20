@@ -7,10 +7,30 @@
     border-bottom: 2px solid black;
 }
 
-.header img
+.header .divider .divide img
 {
     margin-left: 20px;
     height: 100px;
+}
+
+.header .divider
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .divider .divide a
+{
+    color: rgb(153, 36, 36);
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.header .divider .divide a:hover
+{
+    text-decoration: none;
+    color: navy;
 }
 
 *{
@@ -69,3 +89,7 @@ img {
     word-break: break-word;
 }
 
+#menu h2
+{
+    margin-top: 100px;
+}
