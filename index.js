@@ -180,6 +180,8 @@ let entreeDescriptions = JSON.parse(localStorage.getItem('entreeDescriptions')) 
 let entreePrices = JSON.parse(localStorage.getItem('entreePrices')) || [];
 let entreeImages = JSON.parse(localStorage.getItem('entreeImages')) || [];
 
+
+
 function retrieveItemsEntrees() {
     let entreeBox = document.getElementsByClassName('Entrees')[0];
 
