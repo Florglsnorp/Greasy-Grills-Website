@@ -87,6 +87,17 @@ body {
     padding-bottom: 30px;
 }
 
+.box .link a
+{
+    color: rgb(153, 36, 36);
+}
+
+.box .link a:hover
+{
+    text-decoration: none;
+    color: navy;
+}
+
 html {
     --s: 100px; /* control the size */
     --c1: rgb(153, 36, 36);
