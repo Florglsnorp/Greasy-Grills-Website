@@ -67,6 +67,9 @@ img {
     display: block;
     max-width: 400px;
     word-break: break-word;
+<<<<<<< HEAD
+}
+=======
     margin: 0 auto;
 }
 
@@ -81,3 +84,4 @@ img {
 .Drinks {
     text-align: center;
 }
+>>>>>>> c7f5e9b2f048da7ce0f890841868cbb0a095667a
