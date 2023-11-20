@@ -35,6 +35,10 @@ function login() {
     else if (email === '' || pass === '') {
         alert('Enter correct email and password');
     }
+    else if (email === 'thebossman@gmail.com' && pass === '1234')
+    {
+        location.replace('/Menu (Manager)/managermenu.html');
+    }
     else {
         alert('Email not found');
     }
