@@ -180,45 +180,87 @@ let entreeDescriptions = JSON.parse(localStorage.getItem('entreeDescriptions')) 
 let entreePrices = JSON.parse(localStorage.getItem('entreePrices')) || [];
 let entreeImages = JSON.parse(localStorage.getItem('entreeImages')) || [];
 
-entreeNames.push('Burger');
-entreeDescriptions.push('Greasy burger yum');
-entreePrices.push('$5.00');
-entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.lkl9IzIYsoW2celgozPDcwHaHa&pid=Api&rs=1&c=1&qlt=95&w=107&h=107');
 
 
-entreeNames.push('Sausage Sandwich');
-entreeDescriptions.push('Greasy sausage yum');
-entreePrices.push('$4.00');
-entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOaA8gHaEF&pid=Api&rs=1&c=1&qlt=95&w=215&h=118');
+
+
+if (entreeNames.indexOf('Burger') === -1 && localStorage.getItem('thereName1?') === null) {
+    entreeNames.push('Burger');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName1?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Greasy burger yum') === -1 && localStorage.getItem('thereDescription1?') === null) {
+    entreeDescriptions.push('Greasy burger yum');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription1?', 'yes');
+}
+    
+if (entreePrices.indexOf('$5.00') === -1 && localStorage.getItem('therePrice1?') === null) {
+    entreePrices.push('$5.00');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice1?', 'yes');
+}
+    
+if (entreeImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.lkl9IzIYsoW2celgozPDcwHaHa&pid=Api&rs=1&c=1&qlt=95&w=107&h=107') === -1 && localStorage.getItem('thereImage1?') === null) {
+    entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.lkl9IzIYsoW2celgozPDcwHaHa&pid=Api&rs=1&c=1&qlt=95&w=107&h=107');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage1?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Sausage Sandwich') === -1 && localStorage.getItem('thereName2?') === null) {
+    entreeNames.push('Sausage Sandwich');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName2?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Greasy sausage yum') === -1 && localStorage.getItem('thereDescription2?') === null) {
+    entreeDescriptions.push('Greasy sausage yum');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription2?', 'yes');
+}
+    
+if (entreePrices.indexOf('$4.00') === -1 && localStorage.getItem('therePrice2?') === null) {
+    entreePrices.push('$4.00');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice2?', 'yes');
+}
+    
+if (entreeImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOaA8gHaEF&pid=Api&rs=1&c=1&qlt=95&w=215&h=118') === -1 && localStorage.getItem('thereImage2?') === null) {
+    entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOaA8gHaEF&pid=Api&rs=1&c=1&qlt=95&w=215&h=118');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage2?', 'yes');
+}
 
 
 
 function retrieveItemsEntrees() {
     let entreeBox = document.getElementsByClassName('Entrees')[0];
 
-    let n = 0;
-    for (let i of entreeNames) {
-        n++;
-    }
+    
 
-    for (let i = 0; i < n; i++) {
+    for (i in entreeNames) {
         let name = document.createElement('h4');
-        name.innerHTML = entreeNames.shift();
+        name.innerHTML = entreeNames.slice(0)[i];
         entreeBox.appendChild(name);
 
         let description = document.createElement('p');
         description.classList.add('item-description');
-        description.innerHTML = entreeDescriptions.shift()
+        description.innerHTML = entreeDescriptions.slice(0)[i];
         entreeBox.appendChild(description);
 
         let price = document.createElement('p');
         price.classList.add('item-price');
-        price.innerHTML = `Price: ${entreePrices.shift()}`;
+        price.innerHTML = `Price: ${entreePrices.slice(0)[i]}`;
         entreeBox.appendChild(price);
 
         let image = document.createElement('img');
         image.classList.add('item-image');
-        image.src = entreeImages.shift();
+        image.src = entreeImages.slice(0)[i];
         entreeBox.appendChild(image);
 
         let addToCart = document.createElement('button');
@@ -242,33 +284,44 @@ function retrieveItemsEntreesManager() {
         entreeBox.appendChild(addItem);
     }
 
-    let n = 0;
-    for (let i of entreeNames) {
-        n++;
-    }
+    
 
-    for (let i = 0; i < n; i++) {
+    for (i in entreeNames) {
         let name = document.createElement('h4');
-        name.innerHTML = entreeNames.shift();
+        name.innerHTML = entreeNames.slice(0)[i];
         entreeBox.appendChild(name);
     
         let description = document.createElement('p');
         description.classList.add('item-description');
-        description.innerHTML = entreeDescriptions.shift()
+        description.innerHTML = entreeDescriptions.slice(0)[i];
         entreeBox.appendChild(description);
     
         let price = document.createElement('p');
-        price.classList.add('item-price');
-        price.innerHTML = `Price: ${entreePrices.shift()}`;
+        price.classList.add('item-price-entree');
+        price.innerHTML = `Price: ${entreePrices.slice(0)[i]}`;
         entreeBox.appendChild(price);
     
         let image = document.createElement('img');
         image.classList.add('item-image');
-        image.src = entreeImages.shift();
+        image.src = entreeImages.slice(0)[i];
         entreeBox.appendChild(image);
     
         let managePrice = document.createElement('button');
         managePrice.innerHTML = 'Manage Price';
+        managePrice.classList.add('managePrice-entree');
+
+        managePrice.addEventListener('click', function() {
+            let managePriceArray = document.getElementsByClassName('managePrice-entree');
+            let prices = document.getElementsByClassName('item-price-entree');
+            let userInput = prompt('Change Price: ');
+            while (userInput === null || userInput === '') {
+                userInput = prompt('Change Price: ');
+            }
+            let index = Array.prototype.indexOf.call(managePriceArray, this);
+            prices[index].innerHTML = `Price: ${userInput}`;
+            entreePrices.splice(index, 1, userInput);
+            localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+        })        
         entreeBox.appendChild(managePrice);
     
         let remove = document.createElement('button');
@@ -413,37 +466,61 @@ let sideDescriptions = JSON.parse(localStorage.getItem('sideDescriptions')) || [
 let sidePrices = JSON.parse(localStorage.getItem('sidePrices')) || [];
 let sideImages = JSON.parse(localStorage.getItem('sideImages')) || [];
 
-sideNames.push('French Fries');
-sideDescriptions.push('Greasy fries yum');
-sidePrices.push('$2.00');
-sideImages.push('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111');
+
+
+
+
+if (sideNames.indexOf('French Fries') === -1 && localStorage.getItem('thereName3?') === null) {
+    sideNames.push('French Fries');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName3?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Greasy fries yum') === -1 && localStorage.getItem('thereDescription3?') === null) {
+    sideDescriptions.push('Greasy fries yum');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription3?', 'yes');
+}
+    
+if (sidePrices.indexOf('$2.00') === -1 && localStorage.getItem('therePrice3?') === null) {
+    sidePrices.push('$2.00');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice3?', 'yes');
+}
+    
+if (sideImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111') === -1 && localStorage.getItem('thereImage3?') === null) {
+    sideImages.push('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage3?', 'yes');
+}
+
+
+
+
 
 function retrieveItemsSides() {
     let sideBox = document.getElementsByClassName('Sides')[0];
 
-    let n = 0;
-    for (let i of sideNames) {
-        n++;
-    }
+    
 
-    for (let i = 0; i < n; i++) {
+    for (i in sideNames) {
         let name = document.createElement('h4');
-        name.innerHTML = sideNames.shift();
+        name.innerHTML = sideNames.slice(0)[i];
         sideBox.appendChild(name);
 
         let description = document.createElement('p');
         description.classList.add('item-description');
-        description.innerHTML = sideDescriptions.shift()
+        description.innerHTML = sideDescriptions.slice(0)[i];
         sideBox.appendChild(description);
 
         let price = document.createElement('p');
         price.classList.add('item-price');
-        price.innerHTML = `Price: ${sidePrices.shift()}`;
+        price.innerHTML = `Price: ${sidePrices.slice(0)[i]}`;
         sideBox.appendChild(price);
 
         let image = document.createElement('img');
         image.classList.add('item-image');
-        image.src = sideImages.shift();
+        image.src = sideImages.slice(0)[i];
         sideBox.appendChild(image);
 
         let addToCart = document.createElement('button');
@@ -469,33 +546,44 @@ function retrieveItemsSidesManager() {
         sideBox.appendChild(addItem);
     }
 
-    let n = 0;
-    for (let i of sideNames) {
-        n++;
-    }
+    
 
-    for (let i = 0; i < n; i++) {
+    for (i in sideNames) {
         let name = document.createElement('h4');
-        name.innerHTML = sideNames.shift();
+        name.innerHTML = sideNames.slice(0)[i];
         sideBox.appendChild(name);
     
         let description = document.createElement('p');
         description.classList.add('item-description');
-        description.innerHTML = sideDescriptions.shift()
+        description.innerHTML = sideDescriptions.slice(0)[i];
         sideBox.appendChild(description);
     
         let price = document.createElement('p');
-        price.classList.add('item-price');
-        price.innerHTML = `Price: ${sidePrices.shift()}`;
+        price.classList.add('item-price-side');
+        price.innerHTML = `Price: ${sidePrices.slice(0)[i]}`;
         sideBox.appendChild(price);
     
         let image = document.createElement('img');
         image.classList.add('item-image');
-        image.src = sideImages.shift();
+        image.src = sideImages.slice(0)[i];
         sideBox.appendChild(image);
     
         let managePrice = document.createElement('button');
         managePrice.innerHTML = 'Manage Price';
+        managePrice.classList.add('managePrice-side');
+
+        managePrice.addEventListener('click', function() {
+            let managePriceArray = document.getElementsByClassName('managePrice-side');
+            let prices = document.getElementsByClassName('item-price-side');
+            let userInput = prompt('Change Price: ');
+            while (userInput === null || userInput === '') {
+                userInput = prompt('Change Price: ');
+            }
+            let index = Array.prototype.indexOf.call(managePriceArray, this);
+            prices[index].innerHTML = `Price: ${userInput}`;
+            sidePrices.splice(index, 1, userInput);
+            localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+        })        
         sideBox.appendChild(managePrice);
     
         let remove = document.createElement('button');
@@ -644,62 +732,64 @@ let drinkImages = JSON.parse(localStorage.getItem('drinkImages')) || [];
 
 
 
-if (drinkNames.indexOf('water') === -1) {
-    drinkNames.push('water');
+
+if (drinkNames.indexOf('Water') === -1 && localStorage.getItem('thereName4?') === null) {
+    drinkNames.push('Water');
     localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
+    localStorage.setItem('thereName4?', 'yes');
 }
-
-if (drinkDescriptions.indexOf('greasy water') === -1) {
-    drinkDescriptions.push('greasy water');
+    
+if (drinkDescriptions.indexOf('Greasy water yum') === -1 && localStorage.getItem('thereDescription4?') === null) {
+    drinkDescriptions.push('Greasy water yum');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
-
+    localStorage.setItem('thereDescription4?', 'yes');
 }
-
-if (drinkPrices.indexOf('$4.00')) {
-    drinkPrices.push('$4.00');
+    
+if (drinkPrices.indexOf('$1.00') === -1 && localStorage.getItem('therePrice4?') === null) {
+    drinkPrices.push('$1.00');
     localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
+    localStorage.setItem('therePrice4?', 'yes');
 }
-
-if (drinkImages.indexOf('url')) {
-    drinkImages.push('url');
+    
+if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeMqwHaHa&pid=Api&P=0&h=180') === -1 && localStorage.getItem('thereImage4?') === null) {
+    drinkImages.push('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeMqwHaHa&pid=Api&P=0&h=180');
     localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
-
+    localStorage.setItem('thereImage4?', 'yes');
 }
+
+
 
 
 
 function retrieveItemsDrinks() {
     let drinksBox = document.getElementsByClassName('Drinks')[0];
 
-    let n = 0
-    for (let i of drinkNames) {
-        n++;
-    }
+    for (i in drinkNames) {
 
-    for (let i = 0; i < n; i++) {
         let name = document.createElement('h4');
-        name.innerHTML = drinkNames.shift();
+        name.innerHTML = drinkNames.slice(0)[i];
         drinksBox.appendChild(name);
 
         let description = document.createElement('p');
         description.classList.add('item-description');
-        description.innerHTML = drinkDescriptions.shift()
+        description.innerHTML = drinkDescriptions.slice(0)[i]
         drinksBox.appendChild(description);
 
         let price = document.createElement('p');
         price.classList.add('item-price');
-        price.innerHTML = `Price: ${drinkPrices.shift()}`;
+        price.innerHTML = `Price: ${drinkPrices.slice(0)[i]}`;
         drinksBox.appendChild(price);
 
         let image = document.createElement('img');
         image.classList.add('item-image');
-        image.src = drinkImages.shift();
+        image.src = drinkImages.slice(0)[i];
         drinksBox.appendChild(image);
 
         let addToCart = document.createElement('button');
         addToCart.classList.add('addToCart-btn');
         addToCart.innerHTML = 'Add To Cart';
         drinksBox.appendChild(addToCart);
+        
     }
 }
 
@@ -719,36 +809,45 @@ function retrieveItemsDrinksManager() {
         drinkBox.appendChild(addItem);
     }
 
-    let n = 0;
-    for (let i of drinkNames) {
-        n++;
-    }
 
     
 
-    for (let i = 0; i < n; i++) {
+    for (i in drinkNames) {
         let name = document.createElement('h4');
-        name.innerHTML = drinkNames.shift();
+        name.innerHTML = drinkNames.slice(0)[i];
         drinkBox.appendChild(name);
     
         let description = document.createElement('p');
         description.classList.add('item-description');
-        description.innerHTML = drinkDescriptions.shift()
+        description.innerHTML = drinkDescriptions.slice(0)[i];
         drinkBox.appendChild(description);
     
         let price = document.createElement('p');
-        price.classList.add('item-price');
-        price.innerHTML = `Price: ${drinkPrices.shift()}`;
+        price.classList.add('item-price-drink');
+        price.innerHTML = `Price: ${drinkPrices.slice(0)[i]}`;
         drinkBox.appendChild(price);
     
         let image = document.createElement('img');
         image.classList.add('item-image');
-        image.src = drinkImages.shift();
+        image.src = drinkImages.slice(0)[i];
         drinkBox.appendChild(image);
-    
+
         let managePrice = document.createElement('button');
         managePrice.innerHTML = 'Manage Price';
-        managePrice.setAttribute('onclick', 'managePrice()')
+        managePrice.classList.add('managePrice-drink');
+
+        managePrice.addEventListener('click', function() {
+            let managePriceArray = document.getElementsByClassName('managePrice-drink');
+            let prices = document.getElementsByClassName('item-price-drink');
+            let userInput = prompt('Change Price: ');
+            while (userInput === null || userInput === '') {
+                userInput = prompt('Change Price: ');
+            }
+            let index = Array.prototype.indexOf.call(managePriceArray, this);
+            prices[index].innerHTML = `Price: ${userInput}`;
+            drinkPrices.splice(index, 1, userInput);
+            localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
+        })
         drinkBox.appendChild(managePrice);
     
         let remove = document.createElement('button');
@@ -759,9 +858,4 @@ function retrieveItemsDrinksManager() {
 }
 
 
-
-function managePrice() {
-    let userInput = prompt('Change price: ');
-    drinkPrices.splice()
-}
     
