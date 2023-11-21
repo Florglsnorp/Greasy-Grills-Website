@@ -11,7 +11,7 @@ function signUp() {
     }
     else if (emailInput.validity.valid) {
         localStorage.setItem(email, pass);
-        location.replace('index.html');
+        location.replace('index.html#login');
     }
     else {
         alert('Not a valid email');
