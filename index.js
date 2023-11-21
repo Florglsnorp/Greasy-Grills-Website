@@ -11,7 +11,7 @@ function signUp() {
     }
     else if (emailInput.validity.valid) {
         localStorage.setItem(email, pass);
-        location.replace('index.html');
+        location.replace('index.html#login');
     }
     else {
         alert('Not a valid email');
@@ -26,7 +26,7 @@ function login() {
     
     if (localStorage.getItem(email)) {
         if (pass === localStorage.getItem(email)) {
-            location.replace('/Menu/menu.html');
+            location.replace('/Connector_Customer/connector.html');
         }
         else {
             alert('Incorrect password')
@@ -857,5 +857,3 @@ function retrieveItemsDrinksManager() {
     }
 }
 
-
-    
