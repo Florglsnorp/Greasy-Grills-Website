@@ -26,7 +26,7 @@ function login() {
     
     if (localStorage.getItem(email)) {
         if (pass === localStorage.getItem(email)) {
-            location.replace('/Menu/menu.html');
+            location.replace('/Connector_Customer/connector.html');
         }
         else {
             alert('Incorrect password')
@@ -712,4 +712,3 @@ function retrieveItemsDrinksManager() {
 
     
 }
-    
