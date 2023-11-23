@@ -87,9 +87,23 @@ img {
     display: block;
     max-width: 400px;
     word-break: break-word;
+    margin: 0 auto;
 }
 
 #menu h2
 {
     margin-top: 100px;
 }
+
+.Entrees {
+    text-align: center;
+}
+
+.Sides {
+    text-align: center;
+}
+
+.Drinks {
+    text-align: center;
+}
+
