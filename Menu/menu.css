@@ -107,3 +107,25 @@ img {
     text-align: center;
 }
 
+.footer
+{
+    height: 60px;
+    width: 100%;
+    text-align: center;
+    background-color: rgb(188, 188, 188);
+}
+
+.footer .foot p
+{
+    padding-top: 20px;
+}
+
+.checkout
+{
+    padding-bottom: 132px;
+}
+
+.checkout h2
+{
+    background: red;
+}
