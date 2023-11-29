@@ -386,22 +386,22 @@ if (entreeNames.indexOf('Item 8') === -1 && localStorage.getItem('thereName8?') 
     localStorage.setItem('thereName8?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 3') === -1 && localStorage.getItem('thereDescription3?') === null) {
-    entreeDescriptions.push('Item 3');
+if (entreeDescriptions.indexOf('Item 8') === -1 && localStorage.getItem('thereDescription8?') === null) {
+    entreeDescriptions.push('Item 8');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
-    localStorage.setItem('thereDescription3?', 'yes');
+    localStorage.setItem('thereDescription8?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 3') === -1 && localStorage.getItem('therePrice3?') === null) {
-    entreePrices.push('Item 3');
+if (entreePrices.indexOf('Item 8') === -1 && localStorage.getItem('therePrice8?') === null) {
+    entreePrices.push('Item 8');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
-    localStorage.setItem('therePrice3?', 'yes');
+    localStorage.setItem('therePrice8?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 3') === -1 && localStorage.getItem('thereImage3?') === null) {
-    entreeImages.push('Item 3');
+if (entreeImages.indexOf('Item 8') === -1 && localStorage.getItem('thereImage8?') === null) {
+    entreeImages.push('Item 8');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
-    localStorage.setItem('thereImage3?', 'yes');
+    localStorage.setItem('thereImage8?', 'yes');
 }
 
 
