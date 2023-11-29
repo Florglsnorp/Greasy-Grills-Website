@@ -712,4 +712,3 @@ function retrieveItemsDrinksManager() {
 
     
 }
-    
