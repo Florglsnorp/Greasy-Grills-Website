@@ -7,10 +7,30 @@
     border-bottom: 2px solid black;
 }
 
-.header img
+.header .divider .divide img
 {
     margin-left: 20px;
     height: 100px;
+}
+
+.header .divider
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .divider .divide a
+{
+    color: rgb(153, 36, 36);
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.header .divider .divide a:hover
+{
+    text-decoration: none;
+    color: navy;
 }
 
 *{
@@ -67,4 +87,23 @@ img {
     display: block;
     max-width: 400px;
     word-break: break-word;
+    margin: 0 auto;
 }
+
+#menu h2
+{
+    margin-top: 100px;
+}
+
+.Entrees {
+    text-align: center;
+}
+
+.Sides {
+    text-align: center;
+}
+
+.Drinks {
+    text-align: center;
+}
+
