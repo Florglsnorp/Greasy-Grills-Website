@@ -184,26 +184,26 @@ let entreeImages = JSON.parse(localStorage.getItem('entreeImages')) || [];
 
 
 
-if (entreeNames.indexOf('Burger') === -1 && localStorage.getItem('thereName1?') === null) {
-    entreeNames.push('Burger');
+if (entreeNames.indexOf('Double Cheeseburger') === -1 && localStorage.getItem('thereName1?') === null) {
+    entreeNames.push('Double Cheeseburger');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName1?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Greasy burger yum') === -1 && localStorage.getItem('thereDescription1?') === null) {
-    entreeDescriptions.push('Greasy burger yum');
+if (entreeDescriptions.indexOf('Greasy patties with cheese, lettuce, tomato, mayo on our signature bread.') === -1 && localStorage.getItem('thereDescription1?') === null) {
+    entreeDescriptions.push('Greasy patties with cheese, lettuce, tomato, mayo on our signature bread.');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription1?', 'yes');
 }
     
-if (entreePrices.indexOf('$5.00') === -1 && localStorage.getItem('therePrice1?') === null) {
-    entreePrices.push('$5.00');
+if (entreePrices.indexOf('$4.99') === -1 && localStorage.getItem('therePrice1?') === null) {
+    entreePrices.push('$4.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice1?', 'yes');
 }
     
-if (entreeImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.lkl9IzIYsoW2celgozPDcwHaHa&pid=Api&rs=1&c=1&qlt=95&w=107&h=107') === -1 && localStorage.getItem('thereImage1?') === null) {
-    entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.lkl9IzIYsoW2celgozPDcwHaHa&pid=Api&rs=1&c=1&qlt=95&w=107&h=107');
+if (entreeImages.indexOf('https://thedelightfullaugh.com/wp-content/uploads/2020/09/smashed-double-cheeseburger.jpg') === -1 && localStorage.getItem('thereImage1?') === null) {
+    entreeImages.push('https://thedelightfullaugh.com/wp-content/uploads/2020/09/smashed-double-cheeseburger.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage1?', 'yes');
 }
@@ -218,22 +218,190 @@ if (entreeNames.indexOf('Sausage Sandwich') === -1 && localStorage.getItem('ther
     localStorage.setItem('thereName2?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Greasy sausage yum') === -1 && localStorage.getItem('thereDescription2?') === null) {
-    entreeDescriptions.push('Greasy sausage yum');
+if (entreeDescriptions.indexOf('Sausage on our signature bread. Topped with pico de gallo, onions, mayo.') === -1 && localStorage.getItem('thereDescription2?') === null) {
+    entreeDescriptions.push('Sausage on our signature bread. Topped with pico de gallo, onions, mayo.');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription2?', 'yes');
 }
     
-if (entreePrices.indexOf('$4.00') === -1 && localStorage.getItem('therePrice2?') === null) {
-    entreePrices.push('$4.00');
+if (entreePrices.indexOf('$5.50') === -1 && localStorage.getItem('therePrice2?') === null) {
+    entreePrices.push('$5.50');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice2?', 'yes');
 }
     
-if (entreeImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOaA8gHaEF&pid=Api&rs=1&c=1&qlt=95&w=215&h=118') === -1 && localStorage.getItem('thereImage2?') === null) {
-    entreeImages.push('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOaA8gHaEF&pid=Api&rs=1&c=1&qlt=95&w=215&h=118');
+if (entreeImages.indexOf('https://theonlinegrill.com/wp-content/uploads/French-bun-sandwich-with-griled-sausage-and-onion.-Easy-fast-food-recipe-for-home-cooking-4-500x500.jpg') === -1 && localStorage.getItem('thereImage2?') === null) {
+    entreeImages.push('https://theonlinegrill.com/wp-content/uploads/French-bun-sandwich-with-griled-sausage-and-onion.-Easy-fast-food-recipe-for-home-cooking-4-500x500.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage2?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Item 3') === -1 && localStorage.getItem('thereName3?') === null) {
+    entreeNames.push('Item 3');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName3?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Item 3') === -1 && localStorage.getItem('thereDescription3?') === null) {
+    entreeDescriptions.push('Item 3');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription3?', 'yes');
+}
+    
+if (entreePrices.indexOf('Item 3') === -1 && localStorage.getItem('therePrice3?') === null) {
+    entreePrices.push('Item 3');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice3?', 'yes');
+}
+    
+if (entreeImages.indexOf('Item 3') === -1 && localStorage.getItem('thereImage3?') === null) {
+    entreeImages.push('Item 3');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage3?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Item 4') === -1 && localStorage.getItem('thereName4?') === null) {
+    entreeNames.push('Item 4');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName4?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Item 4') === -1 && localStorage.getItem('thereDescription4?') === null) {
+    entreeDescriptions.push('Item 4');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription4?', 'yes');
+}
+    
+if (entreePrices.indexOf('Item 4') === -1 && localStorage.getItem('therePrice4?') === null) {
+    entreePrices.push('Item 4');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice4?', 'yes');
+}
+    
+if (entreeImages.indexOf('Item 4') === -1 && localStorage.getItem('thereImage4?') === null) {
+    entreeImages.push('Item 4');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage4?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Item 5') === -1 && localStorage.getItem('thereName5?') === null) {
+    entreeNames.push('Item 5');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName5?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Item 5') === -1 && localStorage.getItem('thereDescription5?') === null) {
+    entreeDescriptions.push('Item 5');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription5?', 'yes');
+}
+    
+if (entreePrices.indexOf('Item 5') === -1 && localStorage.getItem('therePrice5?') === null) {
+    entreePrices.push('Item 5');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice5?', 'yes');
+}
+    
+if (entreeImages.indexOf('Item 5') === -1 && localStorage.getItem('thereImage5?') === null) {
+    entreeImages.push('Item 5');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage5?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Item 6') === -1 && localStorage.getItem('thereName6?') === null) {
+    entreeNames.push('Item 6');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName6?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Item 6') === -1 && localStorage.getItem('thereDescription6?') === null) {
+    entreeDescriptions.push('Item 6');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription6?', 'yes');
+}
+    
+if (entreePrices.indexOf('Item 6') === -1 && localStorage.getItem('therePrice6?') === null) {
+    entreePrices.push('Item 6');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice6?', 'yes');
+}
+    
+if (entreeImages.indexOf('Item 6') === -1 && localStorage.getItem('thereImage6?') === null) {
+    entreeImages.push('Item 6');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage6?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Item 7') === -1 && localStorage.getItem('thereName7?') === null) {
+    entreeNames.push('Item 7');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName7?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Item 7') === -1 && localStorage.getItem('thereDescription7?') === null) {
+    entreeDescriptions.push('Item 7');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription7?', 'yes');
+}
+    
+if (entreePrices.indexOf('Item 7') === -1 && localStorage.getItem('therePrice7?') === null) {
+    entreePrices.push('Item 7');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice7?', 'yes');
+}
+    
+if (entreeImages.indexOf('Item 7') === -1 && localStorage.getItem('thereImage7?') === null) {
+    entreeImages.push('Item 7');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage7?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Item 8') === -1 && localStorage.getItem('thereName8?') === null) {
+    entreeNames.push('Item 8');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName8?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Item 3') === -1 && localStorage.getItem('thereDescription3?') === null) {
+    entreeDescriptions.push('Item 3');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription3?', 'yes');
+}
+    
+if (entreePrices.indexOf('Item 3') === -1 && localStorage.getItem('therePrice3?') === null) {
+    entreePrices.push('Item 3');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice3?', 'yes');
+}
+    
+if (entreeImages.indexOf('Item 3') === -1 && localStorage.getItem('thereImage3?') === null) {
+    entreeImages.push('Item 3');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage3?', 'yes');
 }
 
 
@@ -241,7 +409,8 @@ if (entreeImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.ydmk2qgDSOQZk8XycOa
 function retrieveItemsEntrees() {
     let entreeBox = document.getElementsByClassName('Entrees')[0];
 
-    
+    let btn = document.getElementsByClassName('btn-entrees')[0];
+    btn.setAttribute('disabled', true);
 
     for (i in entreeNames) {
         let name = document.createElement('h4');
@@ -272,6 +441,9 @@ function retrieveItemsEntrees() {
 
 function retrieveItemsEntreesManager() {
     let entreeBox = document.getElementsByClassName('Entrees')[0];
+
+    let btn = document.getElementsByClassName('btn-entrees')[0];
+    btn.setAttribute('disabled', true);
 
     if (document.getElementById('AddItemBtnEntree')) {
         let x = 0;
@@ -501,28 +673,224 @@ let sideImages = JSON.parse(localStorage.getItem('sideImages')) || [];
 
 
 
-if (sideNames.indexOf('French Fries') === -1 && localStorage.getItem('thereName3?') === null) {
+if (sideNames.indexOf('French Fries') === -1 && localStorage.getItem('thereName9?') === null) {
     sideNames.push('French Fries');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
-    localStorage.setItem('thereName3?', 'yes');
+    localStorage.setItem('thereName9?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Greasy fries yum') === -1 && localStorage.getItem('thereDescription3?') === null) {
+if (sideDescriptions.indexOf('Greasy fries yum') === -1 && localStorage.getItem('thereDescription9?') === null) {
     sideDescriptions.push('Greasy fries yum');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
-    localStorage.setItem('thereDescription3?', 'yes');
+    localStorage.setItem('thereDescription9?', 'yes');
 }
     
-if (sidePrices.indexOf('$2.00') === -1 && localStorage.getItem('therePrice3?') === null) {
+if (sidePrices.indexOf('$2.00') === -1 && localStorage.getItem('therePrice9?') === null) {
     sidePrices.push('$2.00');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
-    localStorage.setItem('therePrice3?', 'yes');
+    localStorage.setItem('therePrice9?', 'yes');
 }
     
-if (sideImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111') === -1 && localStorage.getItem('thereImage3?') === null) {
+if (sideImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111') === -1 && localStorage.getItem('thereImage9?') === null) {
     sideImages.push('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
-    localStorage.setItem('thereImage3?', 'yes');
+    localStorage.setItem('thereImage9?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 10') === -1 && localStorage.getItem('thereName10?') === null) {
+    sideNames.push('Item 10');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName10?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 10') === -1 && localStorage.getItem('thereDescription10?') === null) {
+    sideDescriptions.push('Item 10');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription10?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 10') === -1 && localStorage.getItem('therePrice10?') === null) {
+    sidePrices.push('Item 10');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice10?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 10') === -1 && localStorage.getItem('thereImage10?') === null) {
+    sideImages.push('Item 10');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage10?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 11') === -1 && localStorage.getItem('thereName11?') === null) {
+    sideNames.push('Item 11');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName11?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 11') === -1 && localStorage.getItem('thereDescription11?') === null) {
+    sideDescriptions.push('Item 11');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription11?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 11') === -1 && localStorage.getItem('therePrice11?') === null) {
+    sidePrices.push('Item 11');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice11?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 11') === -1 && localStorage.getItem('thereImage11?') === null) {
+    sideImages.push('Item 11');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage11?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 12') === -1 && localStorage.getItem('thereName12?') === null) {
+    sideNames.push('Item 12');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName12?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 12') === -1 && localStorage.getItem('thereDescription12?') === null) {
+    sideDescriptions.push('Item 12');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription12?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 12') === -1 && localStorage.getItem('therePrice12?') === null) {
+    sidePrices.push('Item 12');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice12?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 12') === -1 && localStorage.getItem('thereImage12?') === null) {
+    sideImages.push('Item 12');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage12?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 13') === -1 && localStorage.getItem('thereName13?') === null) {
+    sideNames.push('Item 13');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName13?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 13') === -1 && localStorage.getItem('thereDescription13?') === null) {
+    sideDescriptions.push('Item 13');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription13?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 13') === -1 && localStorage.getItem('therePrice13?') === null) {
+    sidePrices.push('Item 13');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice13?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 13') === -1 && localStorage.getItem('thereImage13?') === null) {
+    sideImages.push('Item 13');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage13?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 14') === -1 && localStorage.getItem('thereName14?') === null) {
+    sideNames.push('Item 14');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName14?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 14') === -1 && localStorage.getItem('thereDescription14?') === null) {
+    sideDescriptions.push('Item 14');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription14?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 14') === -1 && localStorage.getItem('therePrice14?') === null) {
+    sidePrices.push('Item 14');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice14?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 14') === -1 && localStorage.getItem('thereImage14?') === null) {
+    sideImages.push('Item 14');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage14?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 15') === -1 && localStorage.getItem('thereName15?') === null) {
+    sideNames.push('Item 15');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName15?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 15') === -1 && localStorage.getItem('thereDescription15?') === null) {
+    sideDescriptions.push('Item 15');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription15?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 15') === -1 && localStorage.getItem('therePrice15?') === null) {
+    sidePrices.push('Item 15');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice15?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 15') === -1 && localStorage.getItem('thereImage15?') === null) {
+    sideImages.push('Item 15');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage15?', 'yes');
+}
+
+
+
+
+
+if (sideNames.indexOf('Item 16') === -1 && localStorage.getItem('thereName16?') === null) {
+    sideNames.push('Item 16');
+    localStorage.setItem('sideNames', JSON.stringify(sideNames));
+    localStorage.setItem('thereName16?', 'yes');
+}
+    
+if (sideDescriptions.indexOf('Item 16') === -1 && localStorage.getItem('thereDescription16?') === null) {
+    sideDescriptions.push('Item 16');
+    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
+    localStorage.setItem('thereDescription16?', 'yes');
+}
+    
+if (sidePrices.indexOf('Item 16') === -1 && localStorage.getItem('therePrice16?') === null) {
+    sidePrices.push('Item 16');
+    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
+    localStorage.setItem('therePrice16?', 'yes');
+}
+    
+if (sideImages.indexOf('Item 16') === -1 && localStorage.getItem('thereImage16?') === null) {
+    sideImages.push('Item 16');
+    localStorage.setItem('sideImages', JSON.stringify(sideImages));
+    localStorage.setItem('thereImage16?', 'yes');
 }
 
 
@@ -531,6 +899,9 @@ if (sideImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHA
 
 function retrieveItemsSides() {
     let sideBox = document.getElementsByClassName('Sides')[0];
+
+    let btn = document.getElementsByClassName('btn-sides')[0];
+    btn.setAttribute('disabled', true);
 
     
 
@@ -565,6 +936,9 @@ function retrieveItemsSides() {
 
 function retrieveItemsSidesManager() {
     let sideBox = document.getElementsByClassName('Sides')[0];
+
+    let btn = document.getElementsByClassName('btn-sides')[0];
+    btn.setAttribute('disabled', true);
 
     if (document.getElementById('AddItemBtnSides')) {
         let x = 0;
@@ -795,29 +1169,114 @@ let drinkImages = JSON.parse(localStorage.getItem('drinkImages')) || [];
 
 
 
-if (drinkNames.indexOf('Water') === -1 && localStorage.getItem('thereName4?') === null) {
+if (drinkNames.indexOf('Water') === -1 && localStorage.getItem('thereName17?') === null) {
     drinkNames.push('Water');
     localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
-    localStorage.setItem('thereName4?', 'yes');
+    localStorage.setItem('thereName17?', 'yes');
 }
     
-if (drinkDescriptions.indexOf('Greasy water yum') === -1 && localStorage.getItem('thereDescription4?') === null) {
+if (drinkDescriptions.indexOf('Greasy water yum') === -1 && localStorage.getItem('thereDescription17?') === null) {
     drinkDescriptions.push('Greasy water yum');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
-    localStorage.setItem('thereDescription4?', 'yes');
+    localStorage.setItem('thereDescription17?', 'yes');
 }
     
-if (drinkPrices.indexOf('$1.00') === -1 && localStorage.getItem('therePrice4?') === null) {
+if (drinkPrices.indexOf('$1.00') === -1 && localStorage.getItem('therePrice17?') === null) {
     drinkPrices.push('$1.00');
     localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
-    localStorage.setItem('therePrice4?', 'yes');
+    localStorage.setItem('therePrice17?', 'yes');
 }
     
-if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeMqwHaHa&pid=Api&P=0&h=180') === -1 && localStorage.getItem('thereImage4?') === null) {
+if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeMqwHaHa&pid=Api&P=0&h=180') === -1 && localStorage.getItem('thereImage17?') === null) {
     drinkImages.push('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeMqwHaHa&pid=Api&P=0&h=180');
     localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
-    localStorage.setItem('thereImage4?', 'yes');
+    localStorage.setItem('thereImage17?', 'yes');
 }
+
+
+
+
+
+if (drinkNames.indexOf('Item 18') === -1 && localStorage.getItem('thereName18?') === null) {
+    drinkNames.push('Item 18');
+    localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
+    localStorage.setItem('thereName18?', 'yes');
+}
+    
+if (drinkDescriptions.indexOf('Item 18') === -1 && localStorage.getItem('thereDescription18?') === null) {
+    drinkDescriptions.push('Item 18');
+    localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
+    localStorage.setItem('thereDescription18?', 'yes');
+}
+    
+if (drinkPrices.indexOf('Item 18') === -1 && localStorage.getItem('therePrice18?') === null) {
+    drinkPrices.push('Item 18');
+    localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
+    localStorage.setItem('therePrice18?', 'yes');
+}
+    
+if (drinkImages.indexOf('Item 18') === -1 && localStorage.getItem('thereImage18?') === null) {
+    drinkImages.push('Item 18');
+    localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
+    localStorage.setItem('thereImage18?', 'yes');
+}
+
+
+
+
+
+if (drinkNames.indexOf('Item 19') === -1 && localStorage.getItem('thereName19?') === null) {
+    drinkNames.push('Item 19');
+    localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
+    localStorage.setItem('thereName19?', 'yes');
+}
+    
+if (drinkDescriptions.indexOf('Item 19') === -1 && localStorage.getItem('thereDescription19?') === null) {
+    drinkDescriptions.push('Item 19');
+    localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
+    localStorage.setItem('thereDescription19?', 'yes');
+}
+    
+if (drinkPrices.indexOf('Item 19') === -1 && localStorage.getItem('therePrice19?') === null) {
+    drinkPrices.push('Item 19');
+    localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
+    localStorage.setItem('therePrice19?', 'yes');
+}
+    
+if (drinkImages.indexOf('Item 19') === -1 && localStorage.getItem('thereImage19?') === null) {
+    drinkImages.push('Item 19');
+    localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
+    localStorage.setItem('thereImage19?', 'yes');
+}
+
+
+
+
+
+if (drinkNames.indexOf('Item 20') === -1 && localStorage.getItem('thereName20?') === null) {
+    drinkNames.push('Item 20');
+    localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
+    localStorage.setItem('thereName20?', 'yes');
+}
+    
+if (drinkDescriptions.indexOf('Item 20') === -1 && localStorage.getItem('thereDescription20?') === null) {
+    drinkDescriptions.push('Item 20');
+    localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
+    localStorage.setItem('thereDescription20?', 'yes');
+}
+    
+if (drinkPrices.indexOf('Item 20') === -1 && localStorage.getItem('therePrice20?') === null) {
+    drinkPrices.push('Item 20');
+    localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
+    localStorage.setItem('therePrice20?', 'yes');
+}
+    
+if (drinkImages.indexOf('Item 20') === -1 && localStorage.getItem('thereImage20?') === null) {
+    drinkImages.push('Item 20');
+    localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
+    localStorage.setItem('thereImage20?', 'yes');
+}
+
 
 
 
@@ -825,6 +1284,9 @@ if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeM
 
 function retrieveItemsDrinks() {
     let drinksBox = document.getElementsByClassName('Drinks')[0];
+
+    let btn = document.getElementsByClassName('btn-drinks')[0];
+    btn.setAttribute('disabled', true);
 
     for (i in drinkNames) {
 
@@ -859,6 +1321,9 @@ function retrieveItemsDrinks() {
 
 function retrieveItemsDrinksManager() {
     let drinkBox = document.getElementsByClassName('Drinks')[0];
+
+    let btn = document.getElementsByClassName('btn-drinks')[0];
+    btn.setAttribute('disabled', true);
 
     if (document.getElementById('AddItemBtnDrinks')) {
         let x = 0;
