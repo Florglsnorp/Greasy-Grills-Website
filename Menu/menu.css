@@ -90,6 +90,11 @@ img {
     margin: 0 auto;
 }
 
+#menu h2
+{
+    margin-top: 100px;
+}
+
 .Entrees {
     text-align: center;
 }
@@ -102,7 +107,3 @@ img {
     text-align: center;
 }
 
-#menu h2
-{
-    margin-top: 100px;
-}
