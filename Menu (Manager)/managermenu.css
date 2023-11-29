@@ -19,7 +19,10 @@ font-family: 'Bangers', cursive;
 
 body {
     margin: 0;
-    background-color: bisque;
+    background: bisque;
+    background-image: linear-gradient(90deg, rgba(192, 42, 42, 0.5) 50%, transparent 0),
+      linear-gradient(rgba(192, 47, 47, 0.5) 50%, transparent 0);
+    background-size: 30px 30px;
 }
 
 nav ul {

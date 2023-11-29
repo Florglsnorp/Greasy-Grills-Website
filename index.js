@@ -1414,4 +1414,3 @@ function retrieveItemsDrinksManager() {
         drinkBox.appendChild(remove);
     }
 }
-
