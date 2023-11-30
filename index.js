@@ -16,9 +16,7 @@ function signUp() {
     else {
         alert('Not a valid email');
     }
-} 
-
-
+}
 
 function login() {
     let email = document.getElementsByClassName('username')[0].value;
@@ -386,18 +384,21 @@ if (entreeNames.indexOf('Grilled Chicken Thighs') === -1 && localStorage.getItem
     localStorage.setItem('thereName8?', 'yes');
 }
     
+
 if (entreeDescriptions.indexOf('Two thighs grilled and cooked to perfection') === -1 && localStorage.getItem('thereDescription8?') === null) {
     entreeDescriptions.push('Two thighs grilled and cooked to perfection');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription8?', 'yes');
 }
     
+
 if (entreePrices.indexOf('$7.99') === -1 && localStorage.getItem('therePrice8?') === null) {
     entreePrices.push('$7.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice8?', 'yes');
 }
     
+
 if (entreeImages.indexOf('https://www.tasteofhome.com/wp-content/uploads/2019/04/shutterstock_101642626.jpg?w=1200') === -1 && localStorage.getItem('thereImage8?') === null) {
     entreeImages.push('https://www.tasteofhome.com/wp-content/uploads/2019/04/shutterstock_101642626.jpg?w=1200');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
@@ -442,7 +443,7 @@ function retrieveItemsEntrees() {
 
     for (i in entreeNames) {
         let name = document.createElement('h4');
-        name.classList.add('item-name-entree')
+        name.classList.add('item-name-entree');
         name.innerHTML = entreeNames.slice(0)[i];
         entreeBox.appendChild(name);
 
@@ -464,6 +465,22 @@ function retrieveItemsEntrees() {
         let addToCart = document.createElement('button');
         addToCart.classList.add('addToCart-btn-entree');
         addToCart.innerHTML = 'Add To Cart';
+        addToCart.addEventListener('click', function() 
+        {
+            let name = document.getElementsByClassName('item-name-entree')
+            let price = document.getElementsByClassName('item-price-entree')
+            let image = document.getElementsByClassName('item-image-entree')
+            let buttons = document.getElementsByClassName('addToCart-btn-entree')
+
+            let index = Array.prototype.indexOf.call(buttons, this)
+
+            buttons[index].setAttribute('disabled', true)
+
+            console.log(name[index].innerHTML)
+            console.log(parseFloat(price[index].innerHTML.substring(8)))
+            console.log(image[index].src)
+        }
+        )
         entreeBox.appendChild(addToCart);
     }
 }
@@ -909,21 +926,22 @@ function retrieveItemsSides() {
 
     for (i in sideNames) {
         let name = document.createElement('h4');
+        name.classList.add('item-name-side')
         name.innerHTML = sideNames.slice(0)[i];
         sideBox.appendChild(name);
 
         let description = document.createElement('p');
-        description.classList.add('item-description');
+        description.classList.add('item-description-side');
         description.innerHTML = sideDescriptions.slice(0)[i];
         sideBox.appendChild(description);
 
         let price = document.createElement('p');
-        price.classList.add('item-price');
+        price.classList.add('item-price-side');
         price.innerHTML = `Price: ${sidePrices.slice(0)[i]}`;
         sideBox.appendChild(price);
 
         let image = document.createElement('img');
-        image.classList.add('item-image');
+        image.classList.add('item-image-side');
         image.src = sideImages.slice(0)[i];
         sideBox.appendChild(image);
 
@@ -1294,21 +1312,22 @@ function retrieveItemsDrinks() {
     for (i in drinkNames) {
 
         let name = document.createElement('h4');
+        name.classList.add('item-name-drink')
         name.innerHTML = drinkNames.slice(0)[i];
         drinksBox.appendChild(name);
 
         let description = document.createElement('p');
-        description.classList.add('item-description');
+        description.classList.add('item-description-drink');
         description.innerHTML = drinkDescriptions.slice(0)[i]
         drinksBox.appendChild(description);
 
         let price = document.createElement('p');
-        price.classList.add('item-price');
+        price.classList.add('item-price-drink');
         price.innerHTML = `Price: ${drinkPrices.slice(0)[i]}`;
         drinksBox.appendChild(price);
 
         let image = document.createElement('img');
-        image.classList.add('item-image');
+        image.classList.add('item-image-drink');
         image.src = drinkImages.slice(0)[i];
         drinksBox.appendChild(image);
 

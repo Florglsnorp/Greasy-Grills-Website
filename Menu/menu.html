@@ -9,6 +9,7 @@
     <title>Greasy Grills ~ Order Menu</title>
 </head>
 <body>
+
     <div class="header">
         <div class="divider">
             <div class="divide">
@@ -20,10 +21,10 @@
             </div>
         </div>
     </div>
+
     <main>
         <section id="menu">
           <h2>Greasy Grills Menu</h2>
-
             
             <div class="Entrees">
                 <center><button class="btn-entrees" onclick="retrieveItemsEntrees()">Entrees</button></center>
@@ -36,10 +37,49 @@
             <div class="Drinks">
                 <center><button class="btn-drinks" onclick="retrieveItemsDrinks()">Drinks</button></center>
             </div>
-            </section>
-      </main>
+        </section>
+    </main>
 
-      <script src="../index.js"></script>
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <div class="items">
+            <div class="titleRow">
+                <div class="row">
+                    <h3>Item</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h3>Price</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h3>Quantity</h3>
+                    <hr>
+                </div>
+            </div>
+            <div class="itemRow">
+                <div class="row">
+                    <img src="https://thedelightfullaugh.com/wp-content/uploads/2020/09/smashed-double-cheeseburger.jpg">
+                    <p class="imgTitle">Burger</p>
+                </div>
+                <div class="row">
+                    <p>$4.99</p>
+                </div>
+                <div class="row">
+                    <input type="number" value="1">
+                    <button>Remove?</button>
+                </div>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <p>© 2023, Greasy Grills Inc.</p>
+        </div>
+    </div>
+    <script src="../index.js"></script>
 
 </body>
 </html>
