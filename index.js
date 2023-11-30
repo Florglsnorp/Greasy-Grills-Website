@@ -223,7 +223,7 @@ if (entreeDescriptions.indexOf('Sausage on our signature bread. Topped with pico
 }
     
 if (entreePrices.indexOf('$5.50') === -1 && localStorage.getItem('therePrice2?') === null) {
-    entreePrices.push('$5.50');
+    entreePrices.push('$4.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice2?', 'yes');
 }
@@ -238,26 +238,26 @@ if (entreeImages.indexOf('https://theonlinegrill.com/wp-content/uploads/French-b
 
 
 
-if (entreeNames.indexOf('Item 3') === -1 && localStorage.getItem('thereName3?') === null) {
-    entreeNames.push('Item 3');
+if (entreeNames.indexOf('Chilli Cheese Dog') === -1 && localStorage.getItem('thereName3?') === null) {
+    entreeNames.push('Chilli Cheese Dog');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName3?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 3') === -1 && localStorage.getItem('thereDescription3?') === null) {
-    entreeDescriptions.push('Item 3');
+if (entreeDescriptions.indexOf('Topped with diced onions') === -1 && localStorage.getItem('thereDescription3?') === null) {
+    entreeDescriptions.push('Topped with diced onions');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription3?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 3') === -1 && localStorage.getItem('therePrice3?') === null) {
-    entreePrices.push('Item 3');
+if (entreePrices.indexOf('$3.99') === -1 && localStorage.getItem('therePrice3?') === null) {
+    entreePrices.push('$3.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice3?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 3') === -1 && localStorage.getItem('thereImage3?') === null) {
-    entreeImages.push('Item 3');
+if (entreeImages.indexOf('https://www.simplyrecipes.com/thmb/v6GNX_TDirrpn3czAak4uBufdkg=/1600x1067/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2010__05__chili-dog-horiz-a-1600-1a1f025054124cd886baab5b14d8d5b6.jpg') === -1 && localStorage.getItem('thereImage3?') === null) {
+    entreeImages.push('https://www.simplyrecipes.com/thmb/v6GNX_TDirrpn3czAak4uBufdkg=/1600x1067/filters:fill(auto,1)/__opt__aboutcom__coeus__resources__content_migration__simply_recipes__uploads__2010__05__chili-dog-horiz-a-1600-1a1f025054124cd886baab5b14d8d5b6.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage3?', 'yes');
 }
@@ -266,26 +266,26 @@ if (entreeImages.indexOf('Item 3') === -1 && localStorage.getItem('thereImage3?'
 
 
 
-if (entreeNames.indexOf('Item 4') === -1 && localStorage.getItem('thereName4?') === null) {
-    entreeNames.push('Item 4');
+if (entreeNames.indexOf('Philly Cheesesteak') === -1 && localStorage.getItem('thereName4?') === null) {
+    entreeNames.push('Philly Cheesesteak');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName4?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 4') === -1 && localStorage.getItem('thereDescription4?') === null) {
-    entreeDescriptions.push('Item 4');
+if (entreeDescriptions.indexOf('Seasoned to perfection') === -1 && localStorage.getItem('thereDescription4?') === null) {
+    entreeDescriptions.push('Seasoned to perfection');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription4?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 4') === -1 && localStorage.getItem('therePrice4?') === null) {
-    entreePrices.push('Item 4');
+if (entreePrices.indexOf('$5.50') === -1 && localStorage.getItem('therePrice4?') === null) {
+    entreePrices.push('$5.50');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice4?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 4') === -1 && localStorage.getItem('thereImage4?') === null) {
-    entreeImages.push('Item 4');
+if (entreeImages.indexOf('https://www.simplyrecipes.com/thmb/Ixol4UGLKZ6jVTRMzjTaARyRKjg=/3112x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Philly-Cheesesteak-LEAD-2-b182ca21d19344159d44efd361db1477.jpg') === -1 && localStorage.getItem('thereImage4?') === null) {
+    entreeImages.push('https://www.simplyrecipes.com/thmb/Ixol4UGLKZ6jVTRMzjTaARyRKjg=/3112x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Philly-Cheesesteak-LEAD-2-b182ca21d19344159d44efd361db1477.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage4?', 'yes');
 }
@@ -294,26 +294,26 @@ if (entreeImages.indexOf('Item 4') === -1 && localStorage.getItem('thereImage4?'
 
 
 
-if (entreeNames.indexOf('Item 5') === -1 && localStorage.getItem('thereName5?') === null) {
-    entreeNames.push('Item 5');
+if (entreeNames.indexOf('Steak') === -1 && localStorage.getItem('thereName5?') === null) {
+    entreeNames.push('Steak');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName5?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 5') === -1 && localStorage.getItem('thereDescription5?') === null) {
-    entreeDescriptions.push('Item 5');
+if (entreeDescriptions.indexOf('Grilled to perfection') === -1 && localStorage.getItem('thereDescription5?') === null) {
+    entreeDescriptions.push('Grilled to perfection');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription5?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 5') === -1 && localStorage.getItem('therePrice5?') === null) {
-    entreePrices.push('Item 5');
+if (entreePrices.indexOf('$7.99') === -1 && localStorage.getItem('therePrice5?') === null) {
+    entreePrices.push('$7.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice5?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 5') === -1 && localStorage.getItem('thereImage5?') === null) {
-    entreeImages.push('Item 5');
+if (entreeImages.indexOf('https://wallpaperaccess.com/full/1462828.jpg') === -1 && localStorage.getItem('thereImage5?') === null) {
+    entreeImages.push('https://wallpaperaccess.com/full/1462828.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage5?', 'yes');
 }
@@ -322,26 +322,26 @@ if (entreeImages.indexOf('Item 5') === -1 && localStorage.getItem('thereImage5?'
 
 
 
-if (entreeNames.indexOf('Item 6') === -1 && localStorage.getItem('thereName6?') === null) {
-    entreeNames.push('Item 6');
+if (entreeNames.indexOf('Ribs') === -1 && localStorage.getItem('thereName6?') === null) {
+    entreeNames.push('Ribs');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName6?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 6') === -1 && localStorage.getItem('thereDescription6?') === null) {
-    entreeDescriptions.push('Item 6');
+if (entreeDescriptions.indexOf('Full rack grilled to perfection') === -1 && localStorage.getItem('thereDescription6?') === null) {
+    entreeDescriptions.push('Full rack grilled to perfection');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription6?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 6') === -1 && localStorage.getItem('therePrice6?') === null) {
-    entreePrices.push('Item 6');
+if (entreePrices.indexOf('$8.99') === -1 && localStorage.getItem('therePrice6?') === null) {
+    entreePrices.push('$8.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice6?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 6') === -1 && localStorage.getItem('thereImage6?') === null) {
-    entreeImages.push('Item 6');
+if (entreeImages.indexOf('https://catheadsbbq.com/wp-content/uploads/2022/04/ribs-on-pit-boss-pellet-grill_.jpg') === -1 && localStorage.getItem('thereImage6?') === null) {
+    entreeImages.push('https://catheadsbbq.com/wp-content/uploads/2022/04/ribs-on-pit-boss-pellet-grill_.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage6?', 'yes');
 }
@@ -350,26 +350,26 @@ if (entreeImages.indexOf('Item 6') === -1 && localStorage.getItem('thereImage6?'
 
 
 
-if (entreeNames.indexOf('Item 7') === -1 && localStorage.getItem('thereName7?') === null) {
-    entreeNames.push('Item 7');
+if (entreeNames.indexOf('Grilled Salmon') === -1 && localStorage.getItem('thereName7?') === null) {
+    entreeNames.push('Grilled Salmon');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName7?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 7') === -1 && localStorage.getItem('thereDescription7?') === null) {
-    entreeDescriptions.push('Item 7');
+if (entreeDescriptions.indexOf('Four pieces grilled and seasoned to perfection') === -1 && localStorage.getItem('thereDescription7?') === null) {
+    entreeDescriptions.push('Four pieces grilled and seasoned to perfection');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription7?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 7') === -1 && localStorage.getItem('therePrice7?') === null) {
-    entreePrices.push('Item 7');
+if (entreePrices.indexOf('$10.99') === -1 && localStorage.getItem('therePrice7?') === null) {
+    entreePrices.push('$10.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice7?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 7') === -1 && localStorage.getItem('thereImage7?') === null) {
-    entreeImages.push('Item 7');
+if (entreeImages.indexOf('https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1520957481-grilled-salmon-horizontal.jpg') === -1 && localStorage.getItem('thereImage7?') === null) {
+    entreeImages.push('https://hips.hearstapps.com/del.h-cdn.co/assets/18/11/1520957481-grilled-salmon-horizontal.jpg');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage7?', 'yes');
 }
@@ -378,28 +378,59 @@ if (entreeImages.indexOf('Item 7') === -1 && localStorage.getItem('thereImage7?'
 
 
 
-if (entreeNames.indexOf('Item 8') === -1 && localStorage.getItem('thereName8?') === null) {
-    entreeNames.push('Item 8');
+if (entreeNames.indexOf('Grilled Chicken Thighs') === -1 && localStorage.getItem('thereName8?') === null) {
+    entreeNames.push('Grilled Chicken Thighs');
     localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
     localStorage.setItem('thereName8?', 'yes');
 }
     
-if (entreeDescriptions.indexOf('Item 8') === -1 && localStorage.getItem('thereDescription8?') === null) {
-    entreeDescriptions.push('Item 8');
+
+if (entreeDescriptions.indexOf('Two thighs grilled and cooked to perfection') === -1 && localStorage.getItem('thereDescription8?') === null) {
+    entreeDescriptions.push('Two thighs grilled and cooked to perfection');
     localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
     localStorage.setItem('thereDescription8?', 'yes');
 }
     
-if (entreePrices.indexOf('Item 8') === -1 && localStorage.getItem('therePrice8?') === null) {
-    entreePrices.push('Item 8');
+
+if (entreePrices.indexOf('$7.99') === -1 && localStorage.getItem('therePrice8?') === null) {
+    entreePrices.push('$7.99');
     localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
     localStorage.setItem('therePrice8?', 'yes');
 }
     
-if (entreeImages.indexOf('Item 8') === -1 && localStorage.getItem('thereImage8?') === null) {
-    entreeImages.push('Item 8');
+
+if (entreeImages.indexOf('https://www.tasteofhome.com/wp-content/uploads/2019/04/shutterstock_101642626.jpg?w=1200') === -1 && localStorage.getItem('thereImage8?') === null) {
+    entreeImages.push('https://www.tasteofhome.com/wp-content/uploads/2019/04/shutterstock_101642626.jpg?w=1200');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
     localStorage.setItem('thereImage8?', 'yes');
+}
+
+
+
+
+
+if (entreeNames.indexOf('Grilled Shrimp') === -1 && localStorage.getItem('thereName9?') === null) {
+    entreeNames.push('Grilled Shrimp');
+    localStorage.setItem('entreeNames', JSON.stringify(entreeNames));
+    localStorage.setItem('thereName9?', 'yes');
+}
+    
+if (entreeDescriptions.indexOf('Five kabobs served with veggies and sauce') === -1 && localStorage.getItem('thereDescription9?') === null) {
+    entreeDescriptions.push('Five kabobs served with veggies and sauce');
+    localStorage.setItem('entreeDescriptions', JSON.stringify(entreeDescriptions));
+    localStorage.setItem('thereDescription9?', 'yes');
+}
+    
+if (entreePrices.indexOf('$10.99') === -1 && localStorage.getItem('therePrice9?') === null) {
+    entreePrices.push('$10.99');
+    localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
+    localStorage.setItem('therePrice9?', 'yes');
+}
+    
+if (entreeImages.indexOf('https://vilee.fi/eng/wp-content/uploads/2020/11/Garlic-Grilled-Shrimp-Skewers-5.jpg') === -1 && localStorage.getItem('thereImage9?') === null) {
+    entreeImages.push('https://vilee.fi/eng/wp-content/uploads/2020/11/Garlic-Grilled-Shrimp-Skewers-5.jpg');
+    localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
+    localStorage.setItem('thereImage9?', 'yes');
 }
 
 
@@ -688,54 +719,26 @@ let sideImages = JSON.parse(localStorage.getItem('sideImages')) || [];
 
 
 
-if (sideNames.indexOf('French Fries') === -1 && localStorage.getItem('thereName9?') === null) {
+if (sideNames.indexOf('French Fries') === -1 && localStorage.getItem('thereName10?') === null) {
     sideNames.push('French Fries');
-    localStorage.setItem('sideNames', JSON.stringify(sideNames));
-    localStorage.setItem('thereName9?', 'yes');
-}
-    
-if (sideDescriptions.indexOf('Greasy fries yum') === -1 && localStorage.getItem('thereDescription9?') === null) {
-    sideDescriptions.push('Greasy fries yum');
-    localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
-    localStorage.setItem('thereDescription9?', 'yes');
-}
-    
-if (sidePrices.indexOf('$2.00') === -1 && localStorage.getItem('therePrice9?') === null) {
-    sidePrices.push('$2.00');
-    localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
-    localStorage.setItem('therePrice9?', 'yes');
-}
-    
-if (sideImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111') === -1 && localStorage.getItem('thereImage9?') === null) {
-    sideImages.push('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111');
-    localStorage.setItem('sideImages', JSON.stringify(sideImages));
-    localStorage.setItem('thereImage9?', 'yes');
-}
-
-
-
-
-
-if (sideNames.indexOf('Item 10') === -1 && localStorage.getItem('thereName10?') === null) {
-    sideNames.push('Item 10');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName10?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 10') === -1 && localStorage.getItem('thereDescription10?') === null) {
-    sideDescriptions.push('Item 10');
+if (sideDescriptions.indexOf('Greasy fries yum') === -1 && localStorage.getItem('thereDescription10?') === null) {
+    sideDescriptions.push('Greasy fries yum');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription10?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 10') === -1 && localStorage.getItem('therePrice10?') === null) {
-    sidePrices.push('Item 10');
+if (sidePrices.indexOf('$1.99') === -1 && localStorage.getItem('therePrice10?') === null) {
+    sidePrices.push('$1.99');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice10?', 'yes');
 }
     
-if (sideImages.indexOf('Item 10') === -1 && localStorage.getItem('thereImage10?') === null) {
-    sideImages.push('Item 10');
+if (sideImages.indexOf('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111') === -1 && localStorage.getItem('thereImage10?') === null) {
+    sideImages.push('https://tse1.mm.bing.net/th?id=OIP.bjwIfbyk1X9FvFq6IMgHAAHaFj&pid=Api&rs=1&c=1&qlt=95&w=148&h=111');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage10?', 'yes');
 }
@@ -744,26 +747,26 @@ if (sideImages.indexOf('Item 10') === -1 && localStorage.getItem('thereImage10?'
 
 
 
-if (sideNames.indexOf('Item 11') === -1 && localStorage.getItem('thereName11?') === null) {
-    sideNames.push('Item 11');
+if (sideNames.indexOf('Mac and Cheese') === -1 && localStorage.getItem('thereName11?') === null) {
+    sideNames.push('Mac and Cheese');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName11?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 11') === -1 && localStorage.getItem('thereDescription11?') === null) {
-    sideDescriptions.push('Item 11');
+if (sideDescriptions.indexOf('Breaded and seasoned') === -1 && localStorage.getItem('thereDescription11?') === null) {
+    sideDescriptions.push('Breaded and seasoned');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription11?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 11') === -1 && localStorage.getItem('therePrice11?') === null) {
-    sidePrices.push('Item 11');
+if (sidePrices.indexOf('$3.99') === -1 && localStorage.getItem('therePrice11?') === null) {
+    sidePrices.push('$3.99');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice11?', 'yes');
 }
     
-if (sideImages.indexOf('Item 11') === -1 && localStorage.getItem('thereImage11?') === null) {
-    sideImages.push('Item 11');
+if (sideImages.indexOf('https://www.jessicagavin.com/wp-content/uploads/2014/09/baked-macaroni-and-cheese-with-panko-bread-crumb.jpg') === -1 && localStorage.getItem('thereImage11?') === null) {
+    sideImages.push('https://www.jessicagavin.com/wp-content/uploads/2014/09/baked-macaroni-and-cheese-with-panko-bread-crumb.jpg');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage11?', 'yes');
 }
@@ -772,26 +775,26 @@ if (sideImages.indexOf('Item 11') === -1 && localStorage.getItem('thereImage11?'
 
 
 
-if (sideNames.indexOf('Item 12') === -1 && localStorage.getItem('thereName12?') === null) {
-    sideNames.push('Item 12');
+if (sideNames.indexOf('Mashed Potatoes') === -1 && localStorage.getItem('thereName12?') === null) {
+    sideNames.push('Mashed Potatoes');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName12?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 12') === -1 && localStorage.getItem('thereDescription12?') === null) {
-    sideDescriptions.push('Item 12');
+if (sideDescriptions.indexOf('With gravy and seasoning') === -1 && localStorage.getItem('thereDescription12?') === null) {
+    sideDescriptions.push('With gravy and seasoning');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription12?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 12') === -1 && localStorage.getItem('therePrice12?') === null) {
-    sidePrices.push('Item 12');
+if (sidePrices.indexOf('$2.50') === -1 && localStorage.getItem('therePrice12?') === null) {
+    sidePrices.push('$2.50');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice12?', 'yes');
 }
     
-if (sideImages.indexOf('Item 12') === -1 && localStorage.getItem('thereImage12?') === null) {
-    sideImages.push('Item 12');
+if (sideImages.indexOf('https://www.onceuponachef.com/images/2017/11/Make-Ahead-Mashed-Potatoes-6-scaled.jpg') === -1 && localStorage.getItem('thereImage12?') === null) {
+    sideImages.push('https://www.onceuponachef.com/images/2017/11/Make-Ahead-Mashed-Potatoes-6-scaled.jpg');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage12?', 'yes');
 }
@@ -800,26 +803,26 @@ if (sideImages.indexOf('Item 12') === -1 && localStorage.getItem('thereImage12?'
 
 
 
-if (sideNames.indexOf('Item 13') === -1 && localStorage.getItem('thereName13?') === null) {
-    sideNames.push('Item 13');
+if (sideNames.indexOf('Buttered Biscuit') === -1 && localStorage.getItem('thereName13?') === null) {
+    sideNames.push('Buttered Biscuit');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName13?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 13') === -1 && localStorage.getItem('thereDescription13?') === null) {
-    sideDescriptions.push('Item 13');
+if (sideDescriptions.indexOf('Buttery goodness') === -1 && localStorage.getItem('thereDescription13?') === null) {
+    sideDescriptions.push('Buttery goodness');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription13?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 13') === -1 && localStorage.getItem('therePrice13?') === null) {
-    sidePrices.push('Item 13');
+if (sidePrices.indexOf('$0.99') === -1 && localStorage.getItem('therePrice13?') === null) {
+    sidePrices.push('$0.99');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice13?', 'yes');
 }
     
-if (sideImages.indexOf('Item 13') === -1 && localStorage.getItem('thereImage13?') === null) {
-    sideImages.push('Item 13');
+if (sideImages.indexOf('http://www.onyxtruth.com/wp-content/uploads/2015/05/Butter-Biscuit-Brigade-Onyx-Truth.jpg') === -1 && localStorage.getItem('thereImage13?') === null) {
+    sideImages.push('http://www.onyxtruth.com/wp-content/uploads/2015/05/Butter-Biscuit-Brigade-Onyx-Truth.jpg');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage13?', 'yes');
 }
@@ -828,26 +831,26 @@ if (sideImages.indexOf('Item 13') === -1 && localStorage.getItem('thereImage13?'
 
 
 
-if (sideNames.indexOf('Item 14') === -1 && localStorage.getItem('thereName14?') === null) {
-    sideNames.push('Item 14');
+if (sideNames.indexOf('Caesar Salad') === -1 && localStorage.getItem('thereName14?') === null) {
+    sideNames.push('Caesar Salad');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName14?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 14') === -1 && localStorage.getItem('thereDescription14?') === null) {
-    sideDescriptions.push('Item 14');
+if (sideDescriptions.indexOf('Topped iwith shredded cheese, crutons, caesar dressing') === -1 && localStorage.getItem('thereDescription14?') === null) {
+    sideDescriptions.push('Topped iwith shredded cheese, crutons, caesar dressing');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription14?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 14') === -1 && localStorage.getItem('therePrice14?') === null) {
-    sidePrices.push('Item 14');
+if (sidePrices.indexOf('$2.50') === -1 && localStorage.getItem('therePrice14?') === null) {
+    sidePrices.push('$2.50');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice14?', 'yes');
 }
     
-if (sideImages.indexOf('Item 14') === -1 && localStorage.getItem('thereImage14?') === null) {
-    sideImages.push('Item 14');
+if (sideImages.indexOf('https://www.thecountrycook.net/wp-content/uploads/2011/06/Caesar-Salad-727x1025.jpg') === -1 && localStorage.getItem('thereImage14?') === null) {
+    sideImages.push('https://www.thecountrycook.net/wp-content/uploads/2011/06/Caesar-Salad-727x1025.jpg');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage14?', 'yes');
 }
@@ -856,26 +859,26 @@ if (sideImages.indexOf('Item 14') === -1 && localStorage.getItem('thereImage14?'
 
 
 
-if (sideNames.indexOf('Item 15') === -1 && localStorage.getItem('thereName15?') === null) {
-    sideNames.push('Item 15');
+if (sideNames.indexOf('Cowboy Beans') === -1 && localStorage.getItem('thereName15?') === null) {
+    sideNames.push('Cowboy Beans');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName15?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 15') === -1 && localStorage.getItem('thereDescription15?') === null) {
-    sideDescriptions.push('Item 15');
+if (sideDescriptions.indexOf('Pinto beans, ground beef, smoked meat, sweet and tangy sauce.') === -1 && localStorage.getItem('thereDescription15?') === null) {
+    sideDescriptions.push('Pinto beans, ground beef, smoked meat, sweet and tangy sauce.');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription15?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 15') === -1 && localStorage.getItem('therePrice15?') === null) {
-    sidePrices.push('Item 15');
+if (sidePrices.indexOf('$2.50') === -1 && localStorage.getItem('therePrice15?') === null) {
+    sidePrices.push('$2.50');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice15?', 'yes');
 }
     
-if (sideImages.indexOf('Item 15') === -1 && localStorage.getItem('thereImage15?') === null) {
-    sideImages.push('Item 15');
+if (sideImages.indexOf('https://cdn.tasteatlas.com//images/dishes/000afec74ccd4defab7804807a056e84.jpg?w=905&h=510') === -1 && localStorage.getItem('thereImage15?') === null) {
+    sideImages.push('https://cdn.tasteatlas.com//images/dishes/000afec74ccd4defab7804807a056e84.jpg?w=905&h=510');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage15?', 'yes');
 }
@@ -884,29 +887,30 @@ if (sideImages.indexOf('Item 15') === -1 && localStorage.getItem('thereImage15?'
 
 
 
-if (sideNames.indexOf('Item 16') === -1 && localStorage.getItem('thereName16?') === null) {
-    sideNames.push('Item 16');
+if (sideNames.indexOf('Hush Puppies') === -1 && localStorage.getItem('thereName16?') === null) {
+    sideNames.push('Hush Puppies');
     localStorage.setItem('sideNames', JSON.stringify(sideNames));
     localStorage.setItem('thereName16?', 'yes');
 }
     
-if (sideDescriptions.indexOf('Item 16') === -1 && localStorage.getItem('thereDescription16?') === null) {
-    sideDescriptions.push('Item 16');
+if (sideDescriptions.indexOf('Enriched with onions, garlic, corn, and peppers') === -1 && localStorage.getItem('thereDescription16?') === null) {
+    sideDescriptions.push('Enriched with onions, garlic, corn, and peppers');
     localStorage.setItem('sideDescriptions', JSON.stringify(sideDescriptions));
     localStorage.setItem('thereDescription16?', 'yes');
 }
     
-if (sidePrices.indexOf('Item 16') === -1 && localStorage.getItem('therePrice16?') === null) {
-    sidePrices.push('Item 16');
+if (sidePrices.indexOf('$1.99') === -1 && localStorage.getItem('therePrice16?') === null) {
+    sidePrices.push('$1.99');
     localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
     localStorage.setItem('therePrice16?', 'yes');
 }
     
-if (sideImages.indexOf('Item 16') === -1 && localStorage.getItem('thereImage16?') === null) {
-    sideImages.push('Item 16');
+if (sideImages.indexOf('https://cdn.tasteatlas.com//images/dishes/83e9b21b944d4469a2d75e02404cf584.jpg?w=905&h=510') === -1 && localStorage.getItem('thereImage16?') === null) {
+    sideImages.push('https://cdn.tasteatlas.com//images/dishes/83e9b21b944d4469a2d75e02404cf584.jpg?w=905&h=510');
     localStorage.setItem('sideImages', JSON.stringify(sideImages));
     localStorage.setItem('thereImage16?', 'yes');
 }
+
 
 
 
@@ -945,6 +949,7 @@ function retrieveItemsSides() {
         addToCart.classList.add('addToCart-btn-side');
         addToCart.innerHTML = 'Add To Cart';
         sideBox.appendChild(addToCart);
+
     }
 }
 
@@ -1185,20 +1190,20 @@ let drinkImages = JSON.parse(localStorage.getItem('drinkImages')) || [];
 
 
 
-if (drinkNames.indexOf('Water') === -1 && localStorage.getItem('thereName17?') === null) {
-    drinkNames.push('Water');
+if (drinkNames.indexOf('Bottled Water') === -1 && localStorage.getItem('thereName17?') === null) {
+    drinkNames.push('Bottled Water');
     localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
     localStorage.setItem('thereName17?', 'yes');
 }
     
-if (drinkDescriptions.indexOf('Greasy water yum') === -1 && localStorage.getItem('thereDescription17?') === null) {
-    drinkDescriptions.push('Greasy water yum');
+if (drinkDescriptions.indexOf('Liquid water') === -1 && localStorage.getItem('thereDescription17?') === null) {
+    drinkDescriptions.push('Liquid water');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
     localStorage.setItem('thereDescription17?', 'yes');
 }
     
-if (drinkPrices.indexOf('$1.00') === -1 && localStorage.getItem('therePrice17?') === null) {
-    drinkPrices.push('$1.00');
+if (drinkPrices.indexOf('$0.50') === -1 && localStorage.getItem('therePrice17?') === null) {
+    drinkPrices.push('$0.50');
     localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
     localStorage.setItem('therePrice17?', 'yes');
 }
@@ -1213,26 +1218,26 @@ if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.-fEj_aM7jxziXSuZhfeM
 
 
 
-if (drinkNames.indexOf('Item 18') === -1 && localStorage.getItem('thereName18?') === null) {
-    drinkNames.push('Item 18');
+if (drinkNames.indexOf('Lemonade') === -1 && localStorage.getItem('thereName18?') === null) {
+    drinkNames.push('Lemonade');
     localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
     localStorage.setItem('thereName18?', 'yes');
 }
     
-if (drinkDescriptions.indexOf('Item 18') === -1 && localStorage.getItem('thereDescription18?') === null) {
-    drinkDescriptions.push('Item 18');
+if (drinkDescriptions.indexOf('Fresh') === -1 && localStorage.getItem('thereDescription18?') === null) {
+    drinkDescriptions.push('Fresh');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
     localStorage.setItem('thereDescription18?', 'yes');
 }
     
-if (drinkPrices.indexOf('Item 18') === -1 && localStorage.getItem('therePrice18?') === null) {
-    drinkPrices.push('Item 18');
+if (drinkPrices.indexOf('$1.99') === -1 && localStorage.getItem('therePrice18?') === null) {
+    drinkPrices.push('$1.99');
     localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
     localStorage.setItem('therePrice18?', 'yes');
 }
     
-if (drinkImages.indexOf('Item 18') === -1 && localStorage.getItem('thereImage18?') === null) {
-    drinkImages.push('Item 18');
+if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.gt9Q_tMscuiHlgsg8LnoowAAAA&pid=Api&P=0&h=180') === -1 && localStorage.getItem('thereImage18?') === null) {
+    drinkImages.push('https://tse2.mm.bing.net/th?id=OIP.gt9Q_tMscuiHlgsg8LnoowAAAA&pid=Api&P=0&h=180');
     localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
     localStorage.setItem('thereImage18?', 'yes');
 }
@@ -1241,26 +1246,26 @@ if (drinkImages.indexOf('Item 18') === -1 && localStorage.getItem('thereImage18?
 
 
 
-if (drinkNames.indexOf('Item 19') === -1 && localStorage.getItem('thereName19?') === null) {
-    drinkNames.push('Item 19');
+if (drinkNames.indexOf('Iced Tea') === -1 && localStorage.getItem('thereName19?') === null) {
+    drinkNames.push('Iced Tea');
     localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
     localStorage.setItem('thereName19?', 'yes');
 }
     
-if (drinkDescriptions.indexOf('Item 19') === -1 && localStorage.getItem('thereDescription19?') === null) {
-    drinkDescriptions.push('Item 19');
+if (drinkDescriptions.indexOf('Fresh') === -1 && localStorage.getItem('thereDescription19?') === null) {
+    drinkDescriptions.push('Fresh');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
     localStorage.setItem('thereDescription19?', 'yes');
 }
     
-if (drinkPrices.indexOf('Item 19') === -1 && localStorage.getItem('therePrice19?') === null) {
-    drinkPrices.push('Item 19');
+if (drinkPrices.indexOf('$1.99') === -1 && localStorage.getItem('therePrice19?') === null) {
+    drinkPrices.push('$1.99');
     localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
     localStorage.setItem('therePrice19?', 'yes');
 }
     
-if (drinkImages.indexOf('Item 19') === -1 && localStorage.getItem('thereImage19?') === null) {
-    drinkImages.push('Item 19');
+if (drinkImages.indexOf('https://tse2.mm.bing.net/th?id=OIP.P9ghfNplfR_O-5HKHy4oAgHaLG&pid=Api&P=0&h=180') === -1 && localStorage.getItem('thereImage19?') === null) {
+    drinkImages.push('https://tse2.mm.bing.net/th?id=OIP.P9ghfNplfR_O-5HKHy4oAgHaLG&pid=Api&P=0&h=180');
     localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
     localStorage.setItem('thereImage19?', 'yes');
 }
@@ -1269,26 +1274,26 @@ if (drinkImages.indexOf('Item 19') === -1 && localStorage.getItem('thereImage19?
 
 
 
-if (drinkNames.indexOf('Item 20') === -1 && localStorage.getItem('thereName20?') === null) {
-    drinkNames.push('Item 20');
+if (drinkNames.indexOf('Coke') === -1 && localStorage.getItem('thereName20?') === null) {
+    drinkNames.push('Coke');
     localStorage.setItem('drinkNames', JSON.stringify(drinkNames));
     localStorage.setItem('thereName20?', 'yes');
 }
     
-if (drinkDescriptions.indexOf('Item 20') === -1 && localStorage.getItem('thereDescription20?') === null) {
-    drinkDescriptions.push('Item 20');
+if (drinkDescriptions.indexOf('Tasty') === -1 && localStorage.getItem('thereDescription20?') === null) {
+    drinkDescriptions.push('Tasty');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
     localStorage.setItem('thereDescription20?', 'yes');
 }
     
-if (drinkPrices.indexOf('Item 20') === -1 && localStorage.getItem('therePrice20?') === null) {
-    drinkPrices.push('Item 20');
+if (drinkPrices.indexOf('$1.50') === -1 && localStorage.getItem('therePrice20?') === null) {
+    drinkPrices.push('$1.50');
     localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
     localStorage.setItem('therePrice20?', 'yes');
 }
     
-if (drinkImages.indexOf('Item 20') === -1 && localStorage.getItem('thereImage20?') === null) {
-    drinkImages.push('Item 20');
+if (drinkImages.indexOf('https://tse3.mm.bing.net/th?id=OIP.PYcoeaNts_-_iIMPDAnvHwHaHa&pid=Api&P=0&h=180') === -1 && localStorage.getItem('thereImage20?') === null) {
+    drinkImages.push('https://tse3.mm.bing.net/th?id=OIP.PYcoeaNts_-_iIMPDAnvHwHaHa&pid=Api&P=0&h=180');
     localStorage.setItem('drinkImages', JSON.stringify(drinkImages));
     localStorage.setItem('thereImage20?', 'yes');
 }
@@ -1431,4 +1436,3 @@ function retrieveItemsDrinksManager() {
         drinkBox.appendChild(remove);
     }
 }
-
