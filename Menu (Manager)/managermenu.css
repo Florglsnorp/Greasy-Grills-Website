@@ -53,20 +53,6 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
 }
-  
-h3 {
-    font-size: 40px;
-    background: radial-gradient(rgb(254, 171, 171), bisque);
-    margin-bottom: 10px;
-    text-align: center;
-}
-  
-h4 {
-    background: radial-gradient(rgb(248, 216, 136), bisque);
-    font-size: 30px;
-    margin-bottom: 5px;
-    text-align: center;
-}
 
 img {
     display: block;
@@ -106,7 +92,13 @@ img {
 
 button {
     display: block;
+    padding: 15px 200px;
+    text-align: center;
+    font-size: 25px;
+    text-shadow: 0px 0px 2px #fff;
+    background-image: url("../img/btnbackgroundburgers.jpg");
     margin: 0 auto;
+    margin-top: 20px;
 }
 
 .remove-btn {
