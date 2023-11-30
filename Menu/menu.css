@@ -137,6 +137,7 @@ button {
 .checkout .items .titleRow .row h3
 {
     background: none;
+    font-size: 25px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -144,7 +145,7 @@ button {
 .checkout .items .titleRow .row hr
 {
     border: 2px solid black;
-    width: 75%;
+    width: 80%;
 }
 
 .checkout .items .itemRow
@@ -176,22 +177,23 @@ button {
 
 .checkout .items hr
 {
-    width: 90%;
+    width: 95%;
     height: 0;
     border: 2px solid black;
+    border-radius: 2px;
 }
 
 .checkout .items .itemRow .row p
 {
     margin: auto;
     font-size: 25px;
-    margin-left: 120px;
+    margin-left: 130px;
 }
 
 .checkout .items .itemRow .row input
 {
     margin: auto;
-    margin-left: 50px;
+    margin-left: 105px;
     margin-right: 0;
     height: 25px;
     width: 30px;
@@ -203,6 +205,8 @@ button {
     margin: auto;
     margin-left: 20px;
     height: 34px;
+    padding: 5px;
+    background: none;
     background-color: rgb(251, 95, 95);
     border-radius: 20px;
     font-size: 20px;
