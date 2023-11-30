@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: bisque;
+    margin: 0;
+    padding: 30px 10px;
+}
+
+.header
+{
+    width: 100%;
+    height: 100px;
+    position: fixed;
+    top:0;
+    background-color: rgb(188, 188, 188);
+    border-bottom: 2px solid black;
+}
+
+.header .divider .divide img
+{
+    margin-left: 20px;
+    height: 100px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+}
+  
+nav li {
+    margin: 0 20px;
+}
+  
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.header .divider
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .divider .divide a
+{
+    color: rgb(153, 36, 36);
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.header .divider .divide a:hover
+{
+    text-decoration: none;
+    color: navy;
+}
+
+.card {
+    max-width: 500px;
+    margin: auto;
+    color: black;
+    border-radius: 20 px;
+}
+
+p {
+    margin: 0px;
+}
+
+.container .h8 {
+    font-size: 30px;
+    font-weight: 800;
+    text-align: center;
+}
+
+.btn.btn-primary {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    background-image: linear-gradient(to right, #e38847 0%, #eaaf56 51%, rgb(240, 182, 110) 100%);
+    border: none;
+    transition: 0.5s;
+    background-size: 200% auto;
+    margin-top: 20px;
+}
+
+
+.btn.btn.btn-primary:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.btn.btn-primary:hover .fas.fa-arrow-right {
+    transform: translate(15px);
+    transition: transform 0.2s ease-in;
+}
+
+.form-control {
+    color: white;
+    background-color: rgb(227, 165, 65);
+    border: 2px solid transparent;
+    height: 60px;
+    padding-left: 20px;
+    vertical-align: middle;
+}
+
+.form-control:focus {
+    color: white;
+    background-color: rgb(252, 183, 98);
+    border: 2px solid rgb(252, 183, 98);
+    box-shadow: none;
+}
+
+.text {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+::placeholder {
+    font-size: 14px;
+    font-weight: 600;
+}

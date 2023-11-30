@@ -9,6 +9,7 @@
     <title>Greasy Grills ~ Order Menu</title>
 </head>
 <body>
+
     <div class="header">
         <div class="divider">
             <div class="divide">
@@ -20,10 +21,10 @@
             </div>
         </div>
     </div>
+
     <main>
         <section id="menu">
           <h2>Greasy Grills Menu</h2>
-
             
             <div class="Entrees">
                 <center><button class="btn btn-entrees" onclick="retrieveItemsEntrees()"><p>Entrees</p></button></center>
@@ -36,10 +37,35 @@
             <div class="Drinks">
                 <center><button class="btn btn-drinks" onclick="retrieveItemsDrinks()"><p>Drinks</p></button></center>
             </div>
-            </section>
-      </main>
+        </section>
+    </main>
 
-      <script src="../index.js"></script>
+    <div class="checkout">
+        <h2>Checkout</h2>
+        <div class="items" id="item">
+            <div class="titleRow">
+                <div class="row">
+                    <h3>Item</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h3>Price</h3>
+                    <hr>
+                </div>
+                <div class="row">
+                    <h3>Quantity</h3>
+                    <hr>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="foot">
+            <p>© 2023, Greasy Grills Inc.</p>
+        </div>
+    </div>
+    <script src="../index.js"></script>
 
 </body>
 </html>

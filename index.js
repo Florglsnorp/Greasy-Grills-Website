@@ -16,9 +16,7 @@ function signUp() {
     else {
         alert('Not a valid email');
     }
-} 
-
-
+}
 
 function login() {
     let email = document.getElementsByClassName('username')[0].value;
@@ -398,6 +396,7 @@ if (localStorage.getItem('therePrice8?') === null) {
     localStorage.setItem('therePrice8?', 'yes');
 }
     
+
 if (localStorage.getItem('thereImage8?') === null) {
     entreeImages.push('https://www.tasteofhome.com/wp-content/uploads/2019/04/shutterstock_101642626.jpg?w=1200');
     localStorage.setItem('entreeImages', JSON.stringify(entreeImages));
@@ -442,7 +441,7 @@ function retrieveItemsEntrees() {
 
     for (i in entreeNames) {
         let name = document.createElement('h4');
-        name.classList.add('item-name-entree')
+        name.classList.add('item-name-entree');
         name.innerHTML = entreeNames.slice(0)[i];
         entreeBox.appendChild(name);
 
@@ -464,8 +463,60 @@ function retrieveItemsEntrees() {
         let addToCart = document.createElement('button');
         addToCart.classList.add('addToCart-btn-entree');
         addToCart.innerHTML = 'Add To Cart';
+        addToCart.addEventListener('click', function() 
+        {
+            let name = document.getElementsByClassName('item-name-entree')
+            let price = document.getElementsByClassName('item-price-entree')
+            let image = document.getElementsByClassName('item-image-entree')
+            let buttons = document.getElementsByClassName('addToCart-btn-entree')
+
+            let index = Array.prototype.indexOf.call(buttons, this)
+
+            let items = document.getElementById("item")      
+
+            let row = document.createElement("div")
+            row.classList.add("itemRow")
+
+            var names = items.getElementsByClassName("imgTitle")
+
+            for (let i = 0; i < names.length; i++)
+            {
+                if (name[index].innerHTML == names[i].innerHTML)
+                {
+                    alert("This was already added to the cart")
+                    return
+                }
+            }
+
+            let contents = 
+            `
+                <div class="row">
+                    <img src="${image[index].src}">
+                    <p class="imgTitle">${name[index].innerHTML}</p>
+                </div>
+                <div class="row">
+                    <p>$${parseFloat(price[index].innerHTML.substring(8)).toFixed(2)}</p>
+                </div>
+                <div class="row">
+                    <input type="number" value="1">
+                    <button class="btn btn-danger">Remove?</button>
+                </div>
+            `
+
+            row.innerHTML = contents
+
+            items.appendChild(row)
+            row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
+        }
+        )
         entreeBox.appendChild(addToCart);
     }
+}
+
+function removeCartItem(event)
+{
+    var clicked = event.target
+    clicked.parentElement.parentElement.remove()
 }
 
 function retrieveItemsEntreesManager() {
