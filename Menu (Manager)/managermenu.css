@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -461,8 +462,7 @@ h2 {
     background-color: rgb(209, 84, 84);
 }
 
-
-
-
-
-
+.header .divider .divide .mainThing
+{
+    margin-right: 440px;
+}

@@ -15,6 +15,9 @@
                 <img src="/img/logo.png">
             </div>
             <div class="divide">
+                <a href="#entrees">Entrees</a>
+                <a href="#sides">Sides</a>
+                <a href="#drinks" class="mainThing">Drinks</a>
                 <a href="/index.html">Log Out</a>
             </div>
         </div>
@@ -23,15 +26,15 @@
         <section id="menu">
           <h2 >Greasy Grills Menu</h2>
 
-          <center><button class="btn btn-entrees" onclick="retrieveItemsEntreesManager()"><p>Entrees</p></button></center>
+          <center><button class="btn btn-entrees" onclick="retrieveItemsEntreesManager()" id="entrees"><p>Entrees</p></button></center>
             <div class="Entrees">
             </div>
 
-            <center><button class="btn btn-sides" onclick="retrieveItemsSidesManager()"><p>Sides</p></button></center>
+            <center><button class="btn btn-sides" onclick="retrieveItemsSidesManager()" id="sides"><p>Sides</p></button></center>
             <div class="Sides">
             </div>
 
-            <center><button class="btn btn-drinks" onclick="retrieveItemsDrinksManager()"><p>Drinks</p></button></center>
+            <center><button class="btn btn-drinks" onclick="retrieveItemsDrinksManager()" id="drinks"><p>Drinks</p></button></center>
             <div class="Drinks">
             </div>
             </section>
