@@ -90,7 +90,12 @@ img {
     display: flex;
     justify-content: center;
     gap: 10px;
-    align-items: center;
+    align-items:end;
+    font-size: 25px;
+}
+
+.input {
+    width: 175px;
 }
 
 .input-item input {
@@ -99,9 +104,39 @@ img {
 
 .input-box {
     text-align: center;
+    background-color:  rgb(245, 200, 86);
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
+.input-item-1 {
+    gap: 65px;
+}
 
+.input-item-3 {
+    gap: 70px;
+}
+
+.input-item-4 {
+    gap: 30px;
+}
+
+.confirm-btn {
+    width: 75px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 13px;
+    margin: 5px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+}
+
+.confirm-btn:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
 
 .Entrees {
     text-align: center;
