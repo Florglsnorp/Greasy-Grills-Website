@@ -434,9 +434,6 @@ if (localStorage.getItem('thereImage9?') === null) {
     localStorage.setItem('thereImage9?', 'yes');
 }
 
-var payButton = document.getElementById("pay")
-payButton.disabled = true
-
 function retrieveItemsEntrees() {
     let entreeBox = document.getElementsByClassName('Entrees')[0];
 
@@ -1041,8 +1038,59 @@ function retrieveItemsSides() {
         let addToCart = document.createElement('button');
         addToCart.classList.add('addToCart-btn-side');
         addToCart.innerHTML = 'Add To Cart';
-        sideBox.appendChild(addToCart);
 
+        addToCart.addEventListener('click', function() 
+        {
+            let name = document.getElementsByClassName('item-name-side')
+            let price = document.getElementsByClassName('item-price-side')
+            let image = document.getElementsByClassName('item-image-side')
+            let buttons = document.getElementsByClassName('addToCart-btn-side')
+
+            let index = Array.prototype.indexOf.call(buttons, this)
+
+            let items = document.getElementById("item")
+
+            let row = document.createElement("div")
+            row.classList.add("itemRow")
+
+            var names = items.getElementsByClassName("imgTitle")
+
+            for (let i = 0; i < names.length; i++)
+            {
+                if (name[index].innerHTML == names[i].innerHTML)
+                {
+                    alert("This was already added to the cart")
+                    return
+                }
+            }
+
+            let contents = 
+            `
+                <div class="row">
+                    <img src="${image[index].src}">
+                    <p class="imgTitle">${name[index].innerHTML}</p>
+                </div>
+                <div class="row">
+                    <p class="priceCount">$${parseFloat(price[index].innerHTML.substring(8)).toFixed(2)}</p>
+                </div>
+                <div class="row">
+                    <input type="number" value="1" class="change" id="change">
+                    <button class="btn btn-danger">Remove?</button>
+                </div>
+            `
+
+            row.innerHTML = contents
+
+            let changeCheck = document.getElementById("change")
+
+            items.appendChild(row)
+            row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
+            row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
+            runTotal()
+        }
+        )
+
+        sideBox.appendChild(addToCart);
     }
 }
 
@@ -1430,8 +1478,59 @@ function retrieveItemsDrinks() {
         let addToCart = document.createElement('button');
         addToCart.classList.add('addToCart-btn-drink');
         addToCart.innerHTML = 'Add To Cart';
+
+        addToCart.addEventListener('click', function() 
+        {
+            let name = document.getElementsByClassName('item-name-drink')
+            let price = document.getElementsByClassName('item-price-drink')
+            let image = document.getElementsByClassName('item-image-drink')
+            let buttons = document.getElementsByClassName('addToCart-btn-drink')
+
+            let index = Array.prototype.indexOf.call(buttons, this)
+
+            let items = document.getElementById("item")
+
+            let row = document.createElement("div")
+            row.classList.add("itemRow")
+
+            var names = items.getElementsByClassName("imgTitle")
+
+            for (let i = 0; i < names.length; i++)
+            {
+                if (name[index].innerHTML == names[i].innerHTML)
+                {
+                    alert("This was already added to the cart")
+                    return
+                }
+            }
+
+            let contents = 
+            `
+                <div class="row">
+                    <img src="${image[index].src}">
+                    <p class="imgTitle">${name[index].innerHTML}</p>
+                </div>
+                <div class="row">
+                    <p class="priceCount">$${parseFloat(price[index].innerHTML.substring(8)).toFixed(2)}</p>
+                </div>
+                <div class="row">
+                    <input type="number" value="1" class="change" id="change">
+                    <button class="btn btn-danger">Remove?</button>
+                </div>
+            `
+
+            row.innerHTML = contents
+
+            let changeCheck = document.getElementById("change")
+
+            items.appendChild(row)
+            row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
+            row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
+            runTotal()
+        }
+        )
+
         drinksBox.appendChild(addToCart);
-        
     }
 }
 

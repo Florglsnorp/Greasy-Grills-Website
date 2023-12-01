@@ -67,6 +67,7 @@ main {
     color: rgb(153, 36, 36);
     font-size: 25px;
     margin-right: 50px;
+    font-family: 'Bangers', cursive;
 }
 
 .header .divider .divide a:hover
