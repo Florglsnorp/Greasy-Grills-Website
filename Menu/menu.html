@@ -68,6 +68,10 @@
         </div>
         <div class="payment">
             <button id="pay" onclick="redirect()">Proceed to Payment</button>
+            <script>
+                var payButton = document.getElementById("pay")
+                payButton.disabled = true
+            </script>
         </div>
     </div>
 
