@@ -8,6 +8,8 @@
 }
 
 body {
+    background-image: url("../img/btnbackgroundburgers.jpg");
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
