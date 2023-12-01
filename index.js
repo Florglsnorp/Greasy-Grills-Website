@@ -47,55 +47,55 @@ function login() {
 function addItemInputEntrees() {
 
     if (document.getElementsByClassName('input-box')[0]) {
-        let x = 0;
+        alert('Cannot add more than one item at once');
     }
     else {
         let menu = document.getElementsByClassName('Entrees')[0];
         let inputBox = document.createElement('div');
         inputBox.classList.add('input-box');
-        menu.appendChild(inputBox);
+        menu.prepend(inputBox);
         let inputItem = document.createElement('div');
-        inputItem.classList.add('input-item');
+        inputItem.classList.add('input-item', 'input-item-1');
         inputBox.appendChild(inputItem);
 
         let itemName = document.createElement('p');
         itemName.innerHTML = 'Name: ';
         inputItem.appendChild(itemName);
         let input = document.createElement('input');
-        input.classList.add('input1');
+        input.classList.add('input1', 'input');
         input.setAttribute('type', 'text');
         inputItem.appendChild(input);
 
         let inputItem2 = document.createElement('div');
-        inputItem2.classList.add('input-item');
+        inputItem2.classList.add('input-item', 'input-item-2');
         inputBox.appendChild(inputItem2);
         let itemDescription = document.createElement('p');
         itemDescription.innerHTML = 'Description: ';
         inputItem2.appendChild(itemDescription);
         let input2 = document.createElement('input');
-        input2.classList.add('input2');
+        input2.classList.add('input2', 'input');
         input2.setAttribute('type', 'text');
         inputItem2.appendChild(input2);
 
         let inputItem3 = document.createElement('div');
-        inputItem3.classList.add('input-item');
+        inputItem3.classList.add('input-item', 'input-item-3');
         inputBox.appendChild(inputItem3);
         let itemPrice = document.createElement('p');
         itemPrice.innerHTML = 'Price: ';
         inputItem3.appendChild(itemPrice);
         let input3 = document.createElement('input');
-        input3.classList.add('input3');
+        input3.classList.add('input3', 'input');
         input3.setAttribute('type', 'text');
         inputItem3.appendChild(input3);
 
         let inputItem4 = document.createElement('div');
-        inputItem4.classList.add('input-item');
+        inputItem4.classList.add('input-item', 'input-item-4');
         inputBox.appendChild(inputItem4);
         let itemImage = document.createElement('p');
         itemImage.innerHTML = 'Image URL: ';
         inputItem4.appendChild(itemImage);
         let input4 = document.createElement('input');
-        input4.classList.add('input4');
+        input4.classList.add('input4', 'input');
         input4.setAttribute('type', 'text');
         inputItem4.appendChild(input4);
 
@@ -168,6 +168,9 @@ function addItemEntrees() {
 
         let inputBox = document.getElementsByClassName('input-box')[0];
         inputBox.remove();
+
+        alert('Item has been added');
+        location.reload();
     }
 }
 
@@ -671,55 +674,55 @@ function retrieveItemsEntreesManager() {
 
 function addItemInputSides() {
     if (document.getElementsByClassName('input-box')[0]) {
-        let x = 0;
+        alert('Cannot add more than one item at once');
     }
     else {
         let menu = document.getElementsByClassName('Sides')[0];
         let inputBox = document.createElement('div');
         inputBox.classList.add('input-box');
-        menu.appendChild(inputBox);
+        menu.prepend(inputBox);
         let inputItem = document.createElement('div');
-        inputItem.classList.add('input-item');
+        inputItem.classList.add('input-item', 'input-item-1');
         inputBox.appendChild(inputItem);
 
         let itemName = document.createElement('p');
         itemName.innerHTML = 'Name: ';
         inputItem.appendChild(itemName);
         let input = document.createElement('input');
-        input.classList.add('input1');
+        input.classList.add('input1', 'input');
         input.setAttribute('type', 'text');
         inputItem.appendChild(input);
 
         let inputItem2 = document.createElement('div');
-        inputItem2.classList.add('input-item');
+        inputItem2.classList.add('input-item', 'input-item-2');
         inputBox.appendChild(inputItem2);
         let itemDescription = document.createElement('p');
         itemDescription.innerHTML = 'Description: ';
         inputItem2.appendChild(itemDescription);
         let input2 = document.createElement('input');
-        input2.classList.add('input2');
+        input2.classList.add('input2', 'input');
         input2.setAttribute('type', 'text');
         inputItem2.appendChild(input2);
 
         let inputItem3 = document.createElement('div');
-        inputItem3.classList.add('input-item');
+        inputItem3.classList.add('input-item', 'input-item-3');
         inputBox.appendChild(inputItem3);
         let itemPrice = document.createElement('p');
         itemPrice.innerHTML = 'Price: ';
         inputItem3.appendChild(itemPrice);
         let input3 = document.createElement('input');
-        input3.classList.add('input3');
+        input3.classList.add('input3', 'input');
         input3.setAttribute('type', 'text');
         inputItem3.appendChild(input3);
 
         let inputItem4 = document.createElement('div');
-        inputItem4.classList.add('input-item');
+        inputItem4.classList.add('input-item', 'input-item-4');
         inputBox.appendChild(inputItem4);
         let itemImage = document.createElement('p');
         itemImage.innerHTML = 'Image URL: ';
         inputItem4.appendChild(itemImage);
         let input4 = document.createElement('input');
-        input4.classList.add('input4');
+        input4.classList.add('input4', 'input');
         input4.setAttribute('type', 'text');
         inputItem4.appendChild(input4);
 
@@ -792,6 +795,9 @@ function addItemSides() {
 
         let inputBox = document.getElementsByClassName('input-box')[0];
         inputBox.remove();
+
+        alert('Item has been added');
+        location.reload();
     }
 }
 
@@ -1143,55 +1149,55 @@ function retrieveItemsSidesManager() {
 
 function addItemInputDrinks() {
     if (document.getElementsByClassName('input-box')[0]) {
-        let x = 0;
+        alert('Cannot add more than one item at once');
     }
     else {
         let menu = document.getElementsByClassName('Drinks')[0];
         let inputBox = document.createElement('div');
         inputBox.classList.add('input-box');
-        menu.appendChild(inputBox);
+        menu.prepend(inputBox);
         let inputItem = document.createElement('div');
-        inputItem.classList.add('input-item');
+        inputItem.classList.add('input-item', 'input-item-1');
         inputBox.appendChild(inputItem);
     
         let itemName = document.createElement('p');
         itemName.innerHTML = 'Name: ';
         inputItem.appendChild(itemName);
         let input = document.createElement('input');
-        input.classList.add('input1');
+        input.classList.add('input1', 'input');
         input.setAttribute('type', 'text');
         inputItem.appendChild(input);
     
         let inputItem2 = document.createElement('div');
-        inputItem2.classList.add('input-item');
+        inputItem2.classList.add('input-item', 'input-item-2');
         inputBox.appendChild(inputItem2);
         let itemDescription = document.createElement('p');
         itemDescription.innerHTML = 'Description: ';
         inputItem2.appendChild(itemDescription);
         let input2 = document.createElement('input');
-        input2.classList.add('input2');
+        input2.classList.add('input2', 'input');
         input2.setAttribute('type', 'text');
         inputItem2.appendChild(input2);
     
         let inputItem3 = document.createElement('div');
-        inputItem3.classList.add('input-item');
+        inputItem3.classList.add('input-item', 'input-item-3');
         inputBox.appendChild(inputItem3);
         let itemPrice = document.createElement('p');
         itemPrice.innerHTML = 'Price: ';
         inputItem3.appendChild(itemPrice);
         let input3 = document.createElement('input');
-        input3.classList.add('input3');
+        input3.classList.add('input3', 'input');
         input3.setAttribute('type', 'text');
         inputItem3.appendChild(input3);
     
         let inputItem4 = document.createElement('div');
-        inputItem4.classList.add('input-item');
+        inputItem4.classList.add('input-item', 'input-item-4');
         inputBox.appendChild(inputItem4);
         let itemImage = document.createElement('p');
         itemImage.innerHTML = 'Image URL: ';
         inputItem4.appendChild(itemImage);
         let input4 = document.createElement('input');
-        input4.classList.add('input4');
+        input4.classList.add('input4', 'input');
         input4.setAttribute('type', 'text');
         inputItem4.appendChild(input4);
     
@@ -1264,6 +1270,9 @@ function addItemDrinks() {
 
         let inputBox = document.getElementsByClassName('input-box')[0];
         inputBox.remove();
+
+        alert('Item has been added');
+        location.reload();
     }
 }
 
@@ -1368,7 +1377,7 @@ if (localStorage.getItem('thereName20?') === null) {
 }
     
 if (localStorage.getItem('thereDescription20?') === null) {
-    drinkDescriptions.push('Tasty');
+    drinkDescriptions.push('Cold');
     localStorage.setItem('drinkDescriptions', JSON.stringify(drinkDescriptions));
     localStorage.setItem('thereDescription20?', 'yes');
 }
