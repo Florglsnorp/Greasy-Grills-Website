@@ -16,6 +16,7 @@
                 <img src="/img/logo.png">
             </div>
             <div class="divide">
+                <a href="#checkout">Checkout</a>
                 <a href="/Connector_Customer/connector.html">Back</a>
                 <a href="/index.html">Log Out</a>
             </div>
@@ -40,7 +41,7 @@
         </section>
     </main>
 
-    <div class="checkout">
+    <div class="checkout" id="checkout">
         <h2>Checkout</h2>
         <div class="items" id="item">
             <div class="titleRow">
@@ -57,6 +58,13 @@
                     <hr>
                 </div>
             </div>
+        </div>
+        <div class="price" id="price">
+            <h3>Total Price:</h3>
+            <h3 class="total" id="total">$0.00</h3>
+        </div>
+        <div class="payment">
+            <button id="pay" onclick="redirect()">Proceed to Payment</button>
         </div>
     </div>
 

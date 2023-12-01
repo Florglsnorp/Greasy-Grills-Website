@@ -434,7 +434,8 @@ if (localStorage.getItem('thereImage9?') === null) {
     localStorage.setItem('thereImage9?', 'yes');
 }
 
-
+var payButton = document.getElementById("pay")
+payButton.disabled = true
 
 function retrieveItemsEntrees() {
     let entreeBox = document.getElementsByClassName('Entrees')[0];
@@ -475,7 +476,7 @@ function retrieveItemsEntrees() {
 
             let index = Array.prototype.indexOf.call(buttons, this)
 
-            let items = document.getElementById("item")      
+            let items = document.getElementById("item")
 
             let row = document.createElement("div")
             row.classList.add("itemRow")
@@ -498,18 +499,22 @@ function retrieveItemsEntrees() {
                     <p class="imgTitle">${name[index].innerHTML}</p>
                 </div>
                 <div class="row">
-                    <p>$${parseFloat(price[index].innerHTML.substring(8)).toFixed(2)}</p>
+                    <p class="priceCount">$${parseFloat(price[index].innerHTML.substring(8)).toFixed(2)}</p>
                 </div>
                 <div class="row">
-                    <input type="number" value="1">
+                    <input type="number" value="1" class="change" id="change">
                     <button class="btn btn-danger">Remove?</button>
                 </div>
             `
 
             row.innerHTML = contents
 
+            let changeCheck = document.getElementById("change")
+
             items.appendChild(row)
+            row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
             row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
+            runTotal()
         }
         )
         entreeBox.appendChild(addToCart);
@@ -520,6 +525,54 @@ function removeCartItem(event)
 {
     var clicked = event.target
     clicked.parentElement.parentElement.remove()
+    runTotal()
+}
+
+function checkInput()
+{
+    let items = document.getElementById("item")
+    var prices = items.getElementsByClassName("priceCount")
+    let input = document.getElementsByClassName("change")
+
+    for (let i = 0; i < prices.length; i++)
+    {
+        if (input[i].value <= 0)
+        {
+            input[i].value = 1
+        }
+    }
+    runTotal()
+}
+
+function runTotal()
+{
+    let items = document.getElementById("item")
+    var prices = items.getElementsByClassName("priceCount")
+    var total = 0
+
+    let input = document.getElementsByClassName("change")
+
+    for (let i = 0; i < prices.length; i++)
+    {
+        let num = (parseFloat(prices[i].innerHTML.substring(1)) * input[i].value)
+        total += num
+    }
+
+    if (total != 0)
+    {
+        payButton.disabled = false
+    }
+    else
+    {
+        payButton.disabled = true
+    }
+
+    document.getElementById("total").innerHTML = `$${total.toFixed(2)}`
+}
+
+function redirect()
+{
+    window.location.href = "/Payment Screen/payment.html"
 }
 
 function retrieveItemsEntreesManager() {
