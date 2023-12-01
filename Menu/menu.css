@@ -41,6 +41,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -328,6 +329,7 @@ img {
 {
     background: none;
     font-size: 25px;
+    margin-top: 50px;
     margin-left: 100px;
     margin-right: 100px;
 }
@@ -335,13 +337,15 @@ img {
 .checkout .items .titleRow .row hr
 {
     border: 2px solid black;
-    width: 80%;
+    margin: auto;
+    margin-bottom: 20px;
 }
 
 .checkout .items .itemRow
 {
     display: flex;
     justify-content: space-around;
+    margin-bottom: 20px;
 }
 
 .checkout .items .itemRow .row
@@ -355,14 +359,13 @@ img {
     height: 80px;
     border-radius: 20px;
     border: 2px solid black;
-    margin-left: 70px;
+    margin: auto;
 }
 
 .checkout .items .itemRow .row .imgTitle
 {
     margin: auto;
     font-size: 25px;
-    margin-left: -68px;
 }
 
 .checkout .items hr
@@ -404,6 +407,44 @@ img {
 }
 
 .checkout .items .itemRow .row button:hover
+{
+    background-color: red;
+}
+
+.price
+{
+    display: flex;
+    justify-content: right;
+    gap: 10px;
+}
+
+.price h3
+{
+    margin-top: 50px;
+    font-size: 25px;
+}
+
+.price .total
+{
+    margin-right: 100px;
+}
+
+.payment
+{
+    text-align: center;
+    margin-top: 150px;
+}
+
+.payment button
+{
+    height: 60px;
+    width: 150px;
+    background-color: rgb(251, 95, 95);
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.payment button:hover
 {
     background-color: red;
 }
