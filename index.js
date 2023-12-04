@@ -506,8 +506,6 @@ function retrieveItemsEntrees() {
 
             row.innerHTML = contents
 
-            let changeCheck = document.getElementById("change")
-
             items.appendChild(row)
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
             row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
