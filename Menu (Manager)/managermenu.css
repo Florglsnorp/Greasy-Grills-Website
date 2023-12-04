@@ -2,9 +2,32 @@
 {
     width: 100%;
     height: 100px;
-    position: fixed;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: rgb(188, 188, 188);
     border-bottom: 2px solid black;
+    transition: top 0.3s;
+}
+
+.header .divider
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .divider .divide a
+{
+    color: rgb(153, 36, 36);
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.header .divider .divide a:hover
+{
+    text-decoration: none;
+    color: navy;
 }
 
 .header .divider .divide img
@@ -13,8 +36,12 @@
     height: 100px;
 }
 
-*{
-font-family: 'Bangers', cursive;
+* {
+    font-family: 'Bangers', cursive;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,7 +64,6 @@ nav a {
 }
   
 main {
-    max-width: 800px;
     margin: 0 auto;
     padding: 15px;
 }
@@ -65,7 +91,12 @@ img {
     display: flex;
     justify-content: center;
     gap: 10px;
-    align-items: center;
+    align-items:end;
+    font-size: 25px;
+}
+
+.input {
+    width: 175px;
 }
 
 .input-item input {
@@ -74,9 +105,39 @@ img {
 
 .input-box {
     text-align: center;
+    background-color:  rgb(245, 200, 86);
+    width: 25%;
+    margin: 0 auto;
+    padding-top: 10px;
+    margin-top: 10px;
 }
 
+.input-item-1 {
+    gap: 65px;
+}
 
+.input-item-3 {
+    gap: 70px;
+}
+
+.input-item-4 {
+    gap: 30px;
+}
+
+.confirm-btn {
+    width: 75px;
+    height: 25px;
+    border: 3px solid black;
+    border-radius: 13px;
+    margin: 5px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+}
+
+.confirm-btn:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
 
 .Entrees {
     text-align: center;
@@ -90,37 +151,318 @@ img {
     text-align: center;
 }
 
-button {
+.btn {
     display: block;
     padding: 15px 200px;
     text-align: center;
-    font-size: 25px;
-    text-shadow: 0px 0px 2px #fff;
-    background-image: url("../img/btnbackgroundburgers.jpg");
     margin: 0 auto;
     margin-top: 20px;
+    width: 700px;
+    height: 500px;
 }
 
-.remove-btn {
-    margin-bottom: 20px;
+.btn-entrees {
+    background-image: url("https://i.pinimg.com/originals/f9/e0/d5/f9e0d537d6a106b671cdca9b0307505e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+    transition: filter 0.3s ease-in-out;
 }
 
-.header .divider
+.btn-entrees p {
+    color: whitesmoke;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.btn-entrees:hover {
+    cursor: pointer;
+    filter: brightness(100%);
+}
+
+.btn-sides {
+    background-image: url("https://i.kinja-img.com/gawker-media/image/upload/s--cYfUn4iQ--/c_fill,fl_progressive,g_center,h_900,q_80,w_1600/18l00h14i1ov1jpg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn-sides p {
+    color: whitesmoke;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.btn-sides:hover {
+    cursor: pointer;
+    filter: brightness(100%);
+}
+
+
+.btn-drinks {
+    background-image: url("https://thebusybaker.ca/wp-content/uploads/2018/04/healthy-3-ingredient-lemonade-fbig1-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    filter: brightness(70%);
+    transition: filter 0.3s ease-in-out;
+}
+
+.btn-drinks p {
+    color: whitesmoke;
+    font-size: 80px;
+    letter-spacing: 2px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.btn-drinks:hover {
+    cursor: pointer;
+    filter: brightness(100%);
+}
+
+.item-name-entree {
+    background-color: rgb(245, 200, 86);
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: 900px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.item-description-entree {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.item-price-entree {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.item-name-side {
+    background-color: rgb(245, 200, 86);
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: 900px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.item-description-side {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.item-price-side {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.item-name-drink {
+    background-color: rgb(245, 200, 86);
+    font-size: 40px;
+    letter-spacing: 2px;
+    width: 900px;
+    padding: 10px;
+    text-align: center;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.item-description-drink {
+    padding: 10px;
+    font-size: 20px;
+}
+
+.item-price-drink {
+    padding: 10px;
+    font-size: 20px;
+}
+
+#menu h2
 {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    margin-top: 100px;
+    font-size: 60px;
+    letter-spacing: 7px;
+    text-shadow: 2px 2px 4px #FFFFFF;
 }
 
-.header .divider .divide a
-{
-    color: rgb(153, 36, 36);
-    font-size: 25px;
-    margin-right: 50px;
+h2 {
+    padding: 30px;
+    font-size: 40px;
+    background-color: rgb(245, 200, 86);
+    text-align: center;
 }
 
-.header .divider .divide a:hover
+#AddItemBtnEntree {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+#AddItemBtnEntree:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+#AddItemBtnSides {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+#AddItemBtnSides:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+#AddItemBtnDrinks {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+#AddItemBtnDrinks:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.managePrice-entree {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+.managePrice-entree:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.remove-entree {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+.remove-entree:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.managePrice-side {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+.managePrice-side:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.remove-side {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+.remove-side:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.managePrice-drink {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+.managePrice-drink:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.remove-drink {
+    font-size: 20px;
+    width: 150px;
+    height: 70px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: rgb(153, 36, 36);
+    color: whitesmoke;
+    border: 3px solid black;
+}
+
+.remove-drink:hover {
+    cursor: pointer;
+    background-color: rgb(209, 84, 84);
+}
+
+.header .divider .divide .mainThing
 {
-    text-decoration: none;
-    color: navy;
+    margin-right: 440px;
 }
