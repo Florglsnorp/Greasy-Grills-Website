@@ -506,8 +506,6 @@ function retrieveItemsEntrees() {
 
             row.innerHTML = contents
 
-            let changeCheck = document.getElementById("change")
-
             items.appendChild(row)
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
             row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
@@ -569,6 +567,39 @@ function runTotal()
 
 function redirect()
 {
+    let items = document.getElementById("item")
+    var prices = items.getElementsByClassName("priceCount")
+    let names = items.getElementsByClassName("imgTitle")
+    let individualPrice = 0
+    let individualName = ""
+    let individualQuant = 0
+    let priceList = []
+    let nameList = []
+    let quantList = []
+    let total = 0
+
+    let input = document.getElementsByClassName("change")
+
+    for (let i = 0; i < prices.length; i++)
+    {
+        let num = (parseFloat(prices[i].innerHTML.substring(1)) * input[i].value)
+        total += num
+
+        individualPrice = (parseFloat(prices[i].innerHTML.substring(1)) * input[i].value)
+        priceList.push(individualPrice)
+
+        individualName = (names[i].innerHTML)
+        nameList.push(individualName)
+
+        individualQuant = (input[i].value)
+        quantList.push(individualQuant)
+    }
+
+    localStorage.setItem("itemQuantity", JSON.stringify(quantList))
+    localStorage.setItem("itemName", JSON.stringify(nameList))
+    localStorage.setItem("itemPrice", JSON.stringify(priceList))
+    localStorage.setItem("total", JSON.stringify(total))
+
     window.location.href = "/Payment Screen/payment.html"
 }
 
