@@ -112,6 +112,7 @@ p {
     background-position: right center;
     color: #fff;
     text-decoration: none;
+    cursor: pointer;
 }
 
 
@@ -146,3 +147,59 @@ p {
     font-size: 14px;
     font-weight: 600;
 }
+
+.receipt {
+    background-color: whitesmoke;
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+    display: none;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.thank-you {
+    margin-bottom: 10px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.receipt-row div {
+    width: 15%;
+}
+
+.qty {
+    text-align: right;
+}
+
+.name {
+    text-align: left;
+}
+
+.price {
+    text-align: right;
+}
+
+.total {
+    text-align: right;
+}
+
+.greasy {
+    text-align: center;
+}
+
+.email {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+

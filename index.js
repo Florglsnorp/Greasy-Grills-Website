@@ -1528,7 +1528,7 @@ function retrieveItemsDrinks() {
 
             for (let i = 0; i < names.length; i++)
             {
-                if (name[index].innerHTML == names[i].innerHTML)
+                if (name[index].innerHTML === names[i].innerHTML)
                 {
                     alert("This was already added to the cart")
                     return
@@ -1661,4 +1661,20 @@ function retrieveItemsDrinksManager() {
         })
         drinkBox.appendChild(remove);
     }
+}
+
+
+
+
+
+function receipt() {
+    let payment = document.getElementsByClassName('p-0')[0];
+    payment.style.display = 'none';
+
+    let orderNumber = document.getElementsByClassName('order-number')[0];
+    let random = Math.floor(Math.random() * (1000-1 + 1) + 1);
+    orderNumber.innerHTML = random;
+
+    let receipt = document.getElementsByClassName('receipt')[0];
+    receipt.style.display = 'block';
 }
