@@ -35,7 +35,7 @@ function login() {
     }
     else if (email === 'thebossman@gmail.com' && pass === '1234')
     {
-        location.replace('/Menu (Manager)/managermenu.html');
+        location.replace('/Connector_Manager/connector.html');
     }
     else {
         alert('Email not found');
@@ -1677,4 +1677,33 @@ function receipt() {
 
     let receipt = document.getElementsByClassName('receipt')[0];
     receipt.style.display = 'block';
+
+    let quant = JSON.parse(localStorage.getItem("itemQuantity"))
+    let price = JSON.parse(localStorage.getItem("itemPrice"))
+    let name = JSON.parse(localStorage.getItem("itemName"))
+    let total = JSON.parse(localStorage.getItem("total"))
+
+    for (let i = 0; i < quant.length; i++)
+    {
+        let temp = document.getElementById("cart-items")
+        let div = document.createElement("div")
+        div.classList.add("receipt-row")
+
+        let template = 
+        `
+        <div class="qty">${quant[i]}</div>
+        <div class="name">${name[i]}</div>
+        <div class="price">$${price[i].toFixed(2)}</div>
+        `
+
+        div.innerHTML = template
+        temp.appendChild(div)
+    }
+
+    document.getElementById("thing").innerHTML = `$${total.toFixed(2)}`
+
+    localStorage.removeItem("itemQuantity")
+    localStorage.removeItem("itemPrice")
+    localStorage.removeItem("itemName")
+    localStorage.removeItem("total")
 }
