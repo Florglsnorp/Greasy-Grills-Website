@@ -150,7 +150,7 @@ p {
 
 .receipt {
     background-color: whitesmoke;
-    width: 450px;
+    width: 600px;
     text-align: center;
     padding: 20px;
     display: none;
@@ -192,11 +192,17 @@ hr {
 
 .greasy {
     text-align: center;
+    font-style: italic;
 }
 
 .email {
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.order-number {
+    font-size: 60px;
+    font-weight: 300;
 }
 
 
