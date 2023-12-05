@@ -1683,6 +1683,30 @@ function receipt() {
     let name = JSON.parse(localStorage.getItem("itemName"))
     let total = JSON.parse(localStorage.getItem("total"))
 
+    let quantReceipt = JSON.parse(localStorage.getItem('itemQuantityReceipt')) || [];
+    let priceReceipt = JSON.parse(localStorage.getItem('itemPriceReceipt')) || [];
+    let nameReceipt = JSON.parse(localStorage.getItem('itemNameReceipt')) || [];
+    let totalReceipt = JSON.parse(localStorage.getItem('totalReceipt')) || [];
+    let orderNumberArray = JSON.parse(localStorage.getItem('orderNumber')) || [];
+    let n = JSON.parse(localStorage.getItem('n')) || [];
+
+    for (i in quant) {
+        quantReceipt.push(quant[i]);
+        localStorage.setItem('itemQuantityReceipt', JSON.stringify(quantReceipt));
+        priceReceipt.push(price[i]);
+        localStorage.setItem('itemPriceReceipt', JSON.stringify(priceReceipt));
+        nameReceipt.push(name[i]);
+        localStorage.setItem('itemNameReceipt', JSON.stringify(nameReceipt));
+    }
+
+    totalReceipt.push(total);
+    localStorage.setItem('totalReceipt', JSON.stringify(totalReceipt));
+    orderNumberArray.push(random);
+    localStorage.setItem('orderNumberArray', JSON.stringify(orderNumberArray));
+    n.push(quant.length);
+    localStorage.setItem('n', JSON.stringify(n));
+
+
     for (let i = 0; i < quant.length; i++)
     {
         let temp = document.getElementById("cart-items")
