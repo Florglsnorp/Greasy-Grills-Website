@@ -36,6 +36,9 @@
         let totalReceipt = JSON.parse(localStorage.getItem('totalReceipt')) || [];
         let orderNumberArray = JSON.parse(localStorage.getItem('orderNumberArray')) || [];
         let n = JSON.parse(localStorage.getItem('n')) || [];
+        let tipReceipt = JSON.parse(localStorage.getItem('tipReceipt')) || [];
+        let personReceipt = JSON.parse(localStorage.getItem('personReceipt')) || [];
+        let paymentReceipt = JSON.parse(localStorage.getItem('paymentReceipt')) || [];
 
         for (let i of n) {
             let receipt = document.createElement('div');
@@ -46,6 +49,11 @@
             orderNumber.classList.add('order-number');
             orderNumber.innerHTML = orderNumberArray.shift();
             receipt.appendChild(orderNumber);
+
+            let personName = document.createElement('p');
+            personName.classList.add('person-name');
+            personName.innerHTML = personReceipt.shift();
+            receipt.appendChild(personName);
 
             let hr = document.createElement('hr');
             receipt.appendChild(hr);
@@ -96,6 +104,10 @@
 
             let hr2 = document.createElement('hr');
             receipt.appendChild(hr2);
+
+            let tip = document.createElement('div');
+            tip.classList.add('tip');
+            receipt.appendChild(tip);
 
             let totalDiv = document.createElement('div');
             totalDiv.classList.add('total');
