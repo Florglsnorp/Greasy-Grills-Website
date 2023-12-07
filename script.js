@@ -600,7 +600,7 @@ function redirect()
     localStorage.setItem("itemPrice", JSON.stringify(priceList))
     localStorage.setItem("total", JSON.stringify(total))
 
-    window.location.href = "Payment Screen/payment.html"
+    window.location.href = "/Payment Screen/payment.html"
 }
 
 function retrieveItemsEntreesManager() {
