@@ -150,10 +150,11 @@ p {
 
 .receipt {
     background-color: whitesmoke;
-    width: 450px;
+    width: 600px;
     text-align: center;
     padding: 20px;
     display: none;
+    margin-top: 100px;
 }
 
 hr {
@@ -190,12 +191,67 @@ hr {
     text-align: right;
 }
 
+.tip {
+    text-align: right;
+    margin-bottom: 10px;
+}
+
 .greasy {
     text-align: center;
+    font-style: italic;
 }
 
 .email {
     margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.order-number {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.p-0 {
+    display: none;
+}
+
+.option-container {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.option-container p {
+    font-size: 70px;
+    margin: 0 auto;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.option-container-buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.option-container-buttons div {
+    background-color: rgb(153, 36, 36);
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    padding: 30px;
+    font-size: 30px;
+    border: 3px solid black;
+    border-radius: 10px;
+    color: whitesmoke;
+    box-shadow: 5px 5px 5px 4px black;
+}
+
+.option-container-buttons div:hover {
+    cursor: pointer;
+    box-shadow: none;
+    transform: translate(4px);
+}
+
+.pay-inside {
     margin-bottom: 10px;
 }
 

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receipts</title>
+    <link rel="stylesheet" href="receipt.css">
+    <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet'>
+    <link rel="icon" href="/img/logo copy.png">
+</head>
+<body>
+    
+    <div class="header">
+        <div class="divider">
+            <div class="divide">
+                <img src="/img/logo.png">
+            </div>
+            <div class="divide">
+                <a href="/Connector_Customer/connector.html">Back</a>
+                <a href="../index.html">Log Out</a>
+            </div>
+        </div>
+    </div>
+
+    <section class="box">
+        
+    </section>
+    
+
+    <script>
+        let box = document.getElementsByClassName('box')[0];
+
+        let quantReceipt = JSON.parse(localStorage.getItem('itemQuantityReceipt')) || [];
+        let priceReceipt = JSON.parse(localStorage.getItem('itemPriceReceipt')) || [];
+        let nameReceipt = JSON.parse(localStorage.getItem('itemNameReceipt')) || [];
+        let totalReceipt = JSON.parse(localStorage.getItem('totalReceipt')) || [];
+        let orderNumberArray = JSON.parse(localStorage.getItem('orderNumberArray')) || [];
+        let n = JSON.parse(localStorage.getItem('n')) || [];
+        let tipReceipt = JSON.parse(localStorage.getItem('tipReceipt')) || [];
+        let personReceipt = JSON.parse(localStorage.getItem('personReceipt')) || [];
+        let paymentReceipt = JSON.parse(localStorage.getItem('paymentReceipt')) || [];
+
+        for (let i of n) {
+            let receipt = document.createElement('div');
+            receipt.classList.add('receipt');
+            box.appendChild(receipt);
+
+            let orderNumber = document.createElement('p');
+            orderNumber.classList.add('order-number');
+            orderNumber.innerHTML = orderNumberArray.shift();
+            receipt.appendChild(orderNumber);
+
+            let personName = document.createElement('p');
+            personName.classList.add('person-name');
+            personName.innerHTML = personReceipt.shift();
+            receipt.appendChild(personName);
+
+            let payment = document.createElement('div');
+            payment.classList.add('payment');
+            payment.innerHTML = `Paying with ${paymentReceipt.shift()}`;
+            receipt.appendChild(payment);
+
+            let hr = document.createElement('hr');
+            receipt.appendChild(hr);
+
+            let cartItems = document.createElement('div');
+            cartItems.setAttribute('id', 'cart-items');
+            receipt.appendChild(cartItems);
+
+            let receiptRow1 = document.createElement('div');
+            receiptRow1.classList.add('receipt-row');
+            cartItems.appendChild(receiptRow1);
+
+            let qty1 = document.createElement('div');
+            qty1.classList.add('qty');
+            qty1.innerHTML = 'QTY';
+            receiptRow1.appendChild(qty1);
+
+            let name1 = document.createElement('div');
+            name1.classList.add('name');
+            name1.innerHTML = 'ITEM';
+            receiptRow1.appendChild(name1);
+
+            let price1 = document.createElement('div');
+            price1.classList.add('price');
+            price1.innerHTML = 'TOTAL';
+            receiptRow1.appendChild(price1);
+
+            for (let x = 0; x < i; x++) {
+                let row = document.createElement('div');
+                row.classList.add('receipt-row');
+                cartItems.appendChild(row);
+
+                let qty = document.createElement('div');
+                qty.classList.add('qty');
+                qty.innerHTML = quantReceipt.shift();
+                row.appendChild(qty);
+
+                let name = document.createElement('div');
+                name.classList.add('name');
+                name.innerHTML = nameReceipt.shift();
+                row.appendChild(name);
+
+                let price = document.createElement('div');
+                price.classList.add('price');
+                price.innerHTML = `$${priceReceipt.shift().toFixed(2)}`;
+                row.appendChild(price);
+            }
+
+            let hr2 = document.createElement('hr');
+            receipt.appendChild(hr2);
+
+            let tip = document.createElement('div');
+            tip.classList.add('tip');
+            tip.innerHTML = `Tip: $${tipReceipt.shift()}`;
+            receipt.appendChild(tip);
+
+            let totalDiv = document.createElement('div');
+            totalDiv.classList.add('total');
+            receipt.appendChild(totalDiv);
+
+            let totalP = document.createElement('p');
+            totalP.setAttribute('id', 'thing');
+            totalP.innerHTML = `$${totalReceipt.shift().toFixed(2)}`;
+            totalDiv.appendChild(totalP);
+
+        }
+    </script>
+
+
+
+    <script src="../index.js"></script>
+</body>
+</html>

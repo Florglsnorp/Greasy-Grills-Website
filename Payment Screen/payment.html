@@ -22,6 +22,14 @@
         </div>
     </div>
 
+    <div class="option-container">
+        <p>Payment</p>
+        <div class="option-container-buttons">
+            <div onclick="receipt(1)">Cash</div>
+            <div onclick="paymentDetails()">Card</div>
+        </div>
+    </div>
+
     <div class="container p-0">
         <div class="card px-4">
             <p class="h8 py-3">Payment Details</p>
@@ -50,6 +58,12 @@
                         <input class="form-control mb-3 pt-2 " type="password" placeholder="***">
                     </div>
                 </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <p class="text mb-1">Tip</p>
+                        <input class="form-control mb-3 pt-2 " id="tip-input" type="text" placeholder="0.00">
+                    </div>
+                </div>
                 <div class="col-12">
                     <div class="btn btn-primary mb-3" onclick="receipt()">
                         <span class="ps-3">Complete Payment</span>
@@ -65,7 +79,7 @@
     <div class="receipt">
         <p class="order-number"></p>
         <hr>
-        <p class="thank-you">Thank you for your order</p>
+        <p class="thank-you" id="thank-you">Thank you for your order</p>
         
         <div class="cart-items" id="cart-items">
             <div class="receipt-row">
@@ -76,11 +90,14 @@
         </div>
 
         <hr>
+        <div class="tip">Tip: $0.00</div>
         <div class="total"><p id="thing">$0.00</p></div>
+        <div class="time"></div>
         <div class="email">We will email you when your order is ready</div>
+        <div class="pay-inside"></div>
         <div class="greasy">Greasy Grills</div>
     </div>
 
-    <script src="../index.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>
