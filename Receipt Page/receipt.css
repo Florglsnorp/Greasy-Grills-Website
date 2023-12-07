@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: bisque;
+}
+
+.header
+{
+    width: 100%;
+    height: 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgb(188, 188, 188);
+    border-bottom: 2px solid black;
+    transition: top 0.3s;
+    font-family: 'Bangers', cursive;
+}
+
+.header .divider
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .divider .divide a
+{
+    color: rgb(153, 36, 36);
+    font-size: 25px;
+    margin-right: 50px;
+}
+
+.header .divider .divide a:hover
+{
+    text-decoration: none;
+    color: navy;
+}
+
+.header .divider .divide img
+{
+    margin-left: 20px;
+    height: 100px;
+}
+
+
+
+
+.box {
+    background-color: white;
+    width: 85%;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 20px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-bottom: 50px;
+}
+
+.receipt {
+    background-color: whitesmoke;
+    width: 30%;
+    text-align: center;
+    padding: 20px;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.receipt-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.receipt-row div {
+    width: 15%;
+}
+
+.qty {
+    text-align: right;
+}
+
+.name {
+    text-align: left;
+}
+
+.price {
+    text-align: right;
+}
+
+.total {
+    text-align: right;
+}
+
+.greasy {
+    text-align: center;
+    font-style: italic;
+}
+
+.order-number {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+hr {
+    margin-bottom: 10px;
+}
+
+.tip {
+    text-align: right;
+    margin-bottom: 10px;
+}
+

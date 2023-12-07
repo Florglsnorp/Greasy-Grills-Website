@@ -1667,9 +1667,17 @@ function retrieveItemsDrinksManager() {
 
 
 
-function receipt() {
+function receipt(x) {  
     let payment = document.getElementsByClassName('p-0')[0];
     payment.style.display = 'none';
+
+    let option = document.getElementsByClassName('option-container')[0];
+    option.style.display = 'none';
+
+    let personName = prompt('Please enter a name for the order');
+    while (personName === '' || personName === null) {
+        personName = prompt('Please enter a name for the order');
+    }
 
     let orderNumber = document.getElementsByClassName('order-number')[0];
     let random = Math.floor(Math.random() * (1000-1 + 1) + 1);
@@ -1681,7 +1689,35 @@ function receipt() {
     let quant = JSON.parse(localStorage.getItem("itemQuantity"))
     let price = JSON.parse(localStorage.getItem("itemPrice"))
     let name = JSON.parse(localStorage.getItem("itemName"))
-    let total = JSON.parse(localStorage.getItem("total"))
+    let total = JSON.parse(localStorage.getItem("total")) 
+
+    let quantReceipt = JSON.parse(localStorage.getItem('itemQuantityReceipt')) || [];
+    let priceReceipt = JSON.parse(localStorage.getItem('itemPriceReceipt')) || [];
+    let nameReceipt = JSON.parse(localStorage.getItem('itemNameReceipt')) || [];
+    let totalReceipt = JSON.parse(localStorage.getItem('totalReceipt')) || [];
+    let tipReceipt = JSON.parse(localStorage.getItem('tipReceipt')) || [];
+    let personReceipt = JSON.parse(localStorage.getItem('personReceipt')) || [];
+    let paymentReceipt = JSON.parse(localStorage.getItem('paymentReceipt')) || [];
+    let orderNumberArray = JSON.parse(localStorage.getItem('orderNumberArray')) || [];
+    let n = JSON.parse(localStorage.getItem('n')) || [];
+
+    for (i in quant) {
+        quantReceipt.push(quant[i]);
+        localStorage.setItem('itemQuantityReceipt', JSON.stringify(quantReceipt));
+        priceReceipt.push(price[i]);
+        localStorage.setItem('itemPriceReceipt', JSON.stringify(priceReceipt));
+        nameReceipt.push(name[i]);
+        localStorage.setItem('itemNameReceipt', JSON.stringify(nameReceipt));
+    }
+
+    
+    orderNumberArray.push(random);
+    localStorage.setItem('orderNumberArray', JSON.stringify(orderNumberArray));
+    n.push(quant.length);
+    localStorage.setItem('n', JSON.stringify(n));
+    personReceipt.push(personName);
+    localStorage.setItem('personReceipt', JSON.stringify(personReceipt));
+
 
     for (let i = 0; i < quant.length; i++)
     {
@@ -1700,10 +1736,54 @@ function receipt() {
         temp.appendChild(div)
     }
 
+    let tipInput = document.getElementById('tip-input').value;
+    if (x !== 1) {
+        paymentReceipt.push('card');
+        localStorage.setItem('paymentReceipt', JSON.stringify(paymentReceipt));
+        if (tipInput === '' || isNaN(tipInput)) {
+            document.getElementsByClassName('tip')[0].innerHTML = `Tip: $0.00`;
+            tipInput = 0;
+            tipReceipt.push(tipInput);
+            localStorage.setItem('tipReceipt', JSON.stringify(tipReceipt));
+        }
+        else {
+            document.getElementsByClassName('tip')[0].innerHTML = `Tip: $${tipInput}`;
+            total += Number(tipInput);
+            tipReceipt.push(tipInput);
+            localStorage.setItem('tipReceipt', JSON.stringify(tipReceipt));
+        }
+    }
+    else {
+        tipReceipt.push('0');
+        localStorage.setItem('tipReceipt', JSON.stringify(tipReceipt));
+        paymentReceipt.push('cash');
+        localStorage.setItem('paymentReceipt', JSON.stringify(paymentReceipt));
+    }
+
+    totalReceipt.push(total);
+    localStorage.setItem('totalReceipt', JSON.stringify(totalReceipt));
+
+    document.getElementById('thank-you').innerHTML = `Thank you for your order, ${personName}`;
+    document.getElementsByClassName('time')[0].innerHTML = `Estimated Time: ${Math.floor(Math.random() * (35 - 15 + 1)) + 15} minutes`;
+    
+    if (x === 1) {
+        document.getElementsByClassName('pay-inside')[0].innerHTML = 'Come inside to pay';
+        document.getElementsByClassName('tip')[0].innerHTML = '';
+    }
     document.getElementById("thing").innerHTML = `$${total.toFixed(2)}`
 
     localStorage.removeItem("itemQuantity")
     localStorage.removeItem("itemPrice")
     localStorage.removeItem("itemName")
     localStorage.removeItem("total")
+}
+
+function paymentDetails() {
+    let option = document.getElementsByClassName('option-container')[0];
+    option.style.display = 'none';
+
+    let payment = document.getElementsByClassName('p-0')[0];
+    payment.style.display = 'block';
+
+
 }
