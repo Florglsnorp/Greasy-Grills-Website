@@ -35,7 +35,7 @@ function login() {
     }
     else if (email === 'thebossman@gmail.com' && pass === '1234')
     {
-        location.replace('Connector_Manager/connector.html');
+        location.replace('Connector_Manager/connectorManager.html');
     }
     else {
         alert('Email not found');
