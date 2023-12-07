@@ -55,6 +55,11 @@
             personName.innerHTML = personReceipt.shift();
             receipt.appendChild(personName);
 
+            let payment = document.createElement('div');
+            payment.classList.add('payment');
+            payment.innerHTML = `Paying with ${paymentReceipt.shift()}`;
+            receipt.appendChild(payment);
+
             let hr = document.createElement('hr');
             receipt.appendChild(hr);
 
@@ -107,6 +112,7 @@
 
             let tip = document.createElement('div');
             tip.classList.add('tip');
+            tip.innerHTML = `Tip: $${tipReceipt.shift()}`;
             receipt.appendChild(tip);
 
             let totalDiv = document.createElement('div');

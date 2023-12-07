@@ -1675,7 +1675,7 @@ function receipt(x) {
     option.style.display = 'none';
 
     let personName = prompt('Please enter a name for the order');
-    while (personName === '') {
+    while (personName === '' || personName === null) {
         personName = prompt('Please enter a name for the order');
     }
 
@@ -1754,7 +1754,7 @@ function receipt(x) {
         }
     }
     else {
-        tipReceipt.push('Tip: Cash');
+        tipReceipt.push('0');
         localStorage.setItem('tipReceipt', JSON.stringify(tipReceipt));
         paymentReceipt.push('cash');
         localStorage.setItem('paymentReceipt', JSON.stringify(paymentReceipt));
@@ -1764,6 +1764,7 @@ function receipt(x) {
     localStorage.setItem('totalReceipt', JSON.stringify(totalReceipt));
 
     document.getElementById('thank-you').innerHTML = `Thank you for your order, ${personName}`;
+    document.getElementsByClassName('time')[0].innerHTML = `Estimated Time: ${Math.floor(Math.random() * (35 - 15 + 1)) + 15} minutes`;
     
     if (x === 1) {
         document.getElementsByClassName('pay-inside')[0].innerHTML = 'Come inside to pay';
