@@ -24,7 +24,7 @@ function login() {
     
     if (localStorage.getItem(email)) {
         if (pass === localStorage.getItem(email)) {
-            location.replace('/Connector_Customer/connector.html');
+            location.replace('connector.html');
         }
         else {
             alert('Incorrect password')
@@ -35,7 +35,7 @@ function login() {
     }
     else if (email === 'thebossman@gmail.com' && pass === '1234')
     {
-        location.replace('/Connector_Manager/connector.html');
+        location.replace('connectorManager.html');
     }
     else {
         alert('Email not found');
@@ -600,7 +600,7 @@ function redirect()
     localStorage.setItem("itemPrice", JSON.stringify(priceList))
     localStorage.setItem("total", JSON.stringify(total))
 
-    window.location.href = "/Payment Screen/payment.html"
+    window.location.href = "payment.html"
 }
 
 function retrieveItemsEntreesManager() {
@@ -1112,7 +1112,6 @@ function retrieveItemsSides() {
 
             row.innerHTML = contents
 
-            let changeCheck = document.getElementById("change")
 
             items.appendChild(row)
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
@@ -1552,7 +1551,6 @@ function retrieveItemsDrinks() {
 
             row.innerHTML = contents
 
-            let changeCheck = document.getElementById("change")
 
             items.appendChild(row)
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
