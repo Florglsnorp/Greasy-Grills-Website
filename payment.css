@@ -8,7 +8,7 @@
 }
 
 body {
-    background-image: url("../img/btnbackgroundburgers.jpg");
+    background-image: url("btnbackgroundburgers.jpg");
     background-size: cover;
     display: flex;
     justify-content: center;
