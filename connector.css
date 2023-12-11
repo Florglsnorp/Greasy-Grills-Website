@@ -14,7 +14,6 @@
     top: 0;
     z-index: 1000;
     background-color: rgb(188, 188, 188);
-    border-bottom: 2px solid black;
     transition: top 0.3s;
 }
 
@@ -54,7 +53,7 @@ body
 {
     height: 100%;
     width: 100%;
-    background-color: black;
+    background-color: bisque;
 }
 
 .links .buttons
@@ -66,19 +65,22 @@ body
 {
     width: 50%;
     height: 100%;
+    text-align: center;
 }
 
 .links .buttons .button img
 {
-    width: 100%;
-    height: 800px;
-    opacity: 50%;
+    width: 85%;
+    height: 500px;
+    opacity: 75%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+    border-radius: 40px;
+    border: 2px solid black;
 }
 
-.links .buttons .button img:hover, .links .buttons .button span:hover
+.links .buttons .button img:hover
 {
     opacity: 100%;
     transition: 1s;
@@ -87,8 +89,7 @@ body
 .intro
 {
     text-align: center;
-    height: 500px;
-    border-bottom: 4px solid black;
+    height: 150px;
 }
 
 .intro h1
