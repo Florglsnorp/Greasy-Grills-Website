@@ -64,6 +64,7 @@ function addItemInputEntrees() {
         let input = document.createElement('input');
         input.classList.add('input1', 'input');
         input.setAttribute('type', 'text');
+        input.setAttribute('maxlength', '30');
         inputItem.appendChild(input);
 
         let inputItem2 = document.createElement('div');
@@ -74,6 +75,7 @@ function addItemInputEntrees() {
         inputItem2.appendChild(itemDescription);
         let input2 = document.createElement('input');
         input2.classList.add('input2', 'input');
+        input2.setAttribute('maxlength', '100');
         input2.setAttribute('type', 'text');
         inputItem2.appendChild(input2);
 
@@ -85,6 +87,7 @@ function addItemInputEntrees() {
         inputItem3.appendChild(itemPrice);
         let input3 = document.createElement('input');
         input3.classList.add('input3', 'input');
+        input3.setAttribute('maxlength', '10');
         input3.setAttribute('type', 'text');
         inputItem3.appendChild(input3);
 
@@ -96,6 +99,7 @@ function addItemInputEntrees() {
         inputItem4.appendChild(itemImage);
         let input4 = document.createElement('input');
         input4.classList.add('input4', 'input');
+        input4.setAttribute('maxlength', '400');
         input4.setAttribute('type', 'text');
         inputItem4.appendChild(input4);
 
@@ -719,6 +723,7 @@ function addItemInputSides() {
         inputItem.appendChild(itemName);
         let input = document.createElement('input');
         input.classList.add('input1', 'input');
+        input.setAttribute('maxlength', '30');
         input.setAttribute('type', 'text');
         inputItem.appendChild(input);
 
@@ -730,6 +735,7 @@ function addItemInputSides() {
         inputItem2.appendChild(itemDescription);
         let input2 = document.createElement('input');
         input2.classList.add('input2', 'input');
+        input2.setAttribute('maxlength', '100');
         input2.setAttribute('type', 'text');
         inputItem2.appendChild(input2);
 
@@ -741,6 +747,7 @@ function addItemInputSides() {
         inputItem3.appendChild(itemPrice);
         let input3 = document.createElement('input');
         input3.classList.add('input3', 'input');
+        input3.setAttribute('maxlength', '10');
         input3.setAttribute('type', 'text');
         inputItem3.appendChild(input3);
 
@@ -752,6 +759,7 @@ function addItemInputSides() {
         inputItem4.appendChild(itemImage);
         let input4 = document.createElement('input');
         input4.classList.add('input4', 'input');
+        input4.setAttribute('maxlength', '400');
         input4.setAttribute('type', 'text');
         inputItem4.appendChild(input4);
 
@@ -1245,6 +1253,7 @@ function addItemInputDrinks() {
         inputItem.appendChild(itemName);
         let input = document.createElement('input');
         input.classList.add('input1', 'input');
+        input.setAttribute('maxlength', '30');
         input.setAttribute('type', 'text');
         inputItem.appendChild(input);
     
@@ -1256,6 +1265,7 @@ function addItemInputDrinks() {
         inputItem2.appendChild(itemDescription);
         let input2 = document.createElement('input');
         input2.classList.add('input2', 'input');
+        input2.setAttribute('maxlength', '100');
         input2.setAttribute('type', 'text');
         inputItem2.appendChild(input2);
     
@@ -1267,6 +1277,7 @@ function addItemInputDrinks() {
         inputItem3.appendChild(itemPrice);
         let input3 = document.createElement('input');
         input3.classList.add('input3', 'input');
+        input3.setAttribute('maxlength', '10');
         input3.setAttribute('type', 'text');
         inputItem3.appendChild(input3);
     
@@ -1278,6 +1289,7 @@ function addItemInputDrinks() {
         inputItem4.appendChild(itemImage);
         let input4 = document.createElement('input');
         input4.classList.add('input4', 'input');
+        input4.setAttribute('maxlength', '300');
         input4.setAttribute('type', 'text');
         inputItem4.appendChild(input4);
     

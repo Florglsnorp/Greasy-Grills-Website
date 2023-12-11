@@ -47,6 +47,7 @@
 body {
     margin: 0;
     background-color: bisque;
+    zoom: 75%;
 }
 
 nav ul {
