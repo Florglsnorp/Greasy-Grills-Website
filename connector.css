@@ -78,7 +78,7 @@ body
     background-attachment: fixed;
 }
 
-.links .buttons .button img:hover
+.links .buttons .button img:hover, .links .buttons .button span:hover
 {
     opacity: 100%;
     transition: 1s;
@@ -136,3 +136,8 @@ body
 {
     padding-top: 20px;
 }
+
+
+
+
+
