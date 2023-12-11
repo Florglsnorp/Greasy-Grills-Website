@@ -510,6 +510,7 @@ function retrieveItemsEntrees() {
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
             row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
             runTotal()
+            alert('Item added to cart');
         }
         )
         entreeBox.appendChild(addToCart);
@@ -650,11 +651,11 @@ function retrieveItemsEntreesManager() {
         managePrice.addEventListener('click', function() {
             let managePriceArray = document.getElementsByClassName('managePrice-entree');
             let prices = document.getElementsByClassName('item-price-entree');
-            let userInput = prompt('Change Price: ');
-            while (userInput === null || userInput === '') {
-                userInput = prompt('Change Price: ');
-            }
             let index = Array.prototype.indexOf.call(managePriceArray, this);
+            let userInput = prompt('Change Price: ', prices[index].innerHTML.substring(7));
+            if (userInput === null || userInput === '') {
+                return 0;
+            }
             prices[index].innerHTML = `Price: ${userInput}`;
             entreePrices.splice(index, 1, userInput);
             localStorage.setItem('entreePrices', JSON.stringify(entreePrices));
@@ -1117,6 +1118,7 @@ function retrieveItemsSides() {
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
             row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
             runTotal()
+            alert('Item added to cart');
         }
         )
 
@@ -1173,11 +1175,11 @@ function retrieveItemsSidesManager() {
         managePrice.addEventListener('click', function() {
             let managePriceArray = document.getElementsByClassName('managePrice-side');
             let prices = document.getElementsByClassName('item-price-side');
-            let userInput = prompt('Change Price: ');
-            while (userInput === null || userInput === '') {
-                userInput = prompt('Change Price: ');
-            }
             let index = Array.prototype.indexOf.call(managePriceArray, this);
+            let userInput = prompt('Change Price: ', prices[index].innerHTML.substring(7));
+            if (userInput === null || userInput === '') {
+                return 0;
+            }
             prices[index].innerHTML = `Price: ${userInput}`;
             sidePrices.splice(index, 1, userInput);
             localStorage.setItem('sidePrices', JSON.stringify(sidePrices));
@@ -1556,6 +1558,7 @@ function retrieveItemsDrinks() {
             row.getElementsByClassName("change")[0].addEventListener("input", checkInput)
             row.getElementsByClassName("btn-danger")[0].addEventListener("click", removeCartItem)
             runTotal()
+            alert('Item added to cart');
         }
         )
 
@@ -1613,11 +1616,11 @@ function retrieveItemsDrinksManager() {
         managePrice.addEventListener('click', function() {
             let managePriceArray = document.getElementsByClassName('managePrice-drink');
             let prices = document.getElementsByClassName('item-price-drink');
-            let userInput = prompt('Change Price: ');
-            while (userInput === null || userInput === '') {
-                userInput = prompt('Change Price: ');
-            }
             let index = Array.prototype.indexOf.call(managePriceArray, this);
+            let userInput = prompt('Change Price: ', prices[index].innerHTML.substring(7));
+            if (userInput === null || userInput === '') {
+                return 0;
+            }
             prices[index].innerHTML = `Price: ${userInput}`;
             drinkPrices.splice(index, 1, userInput);
             localStorage.setItem('drinkPrices', JSON.stringify(drinkPrices));
@@ -1672,9 +1675,9 @@ function receipt(x) {
     let option = document.getElementsByClassName('option-container')[0];
     option.style.display = 'none';
 
-    let personName = prompt('Please enter a name for the order');
-    while (personName === '' || personName === null) {
-        personName = prompt('Please enter a name for the order');
+    let personName = prompt('Please enter a name for the order (25 character limit)');
+    while (personName === '' || personName === null || personName.length > 25) {
+        personName = prompt('Please enter a name for the order (25 character limit)');
     }
 
     let orderNumber = document.getElementsByClassName('order-number')[0];
